@@ -1,0 +1,7 @@
+__pycache__
+.idea
+.git/
+/data/cos-refD
+data/ruc*
+data/course_name.csv
+ref

@@ -6,7 +6,7 @@
 @time: 2018/9/18 10:45
 """
 import pandas as pd
-ruc = pd.read_csv('ruc.csv')
+ruc = pd.read_csv('ruc1.csv',encoding='utf-8')
 key_word_dict = {}
 with open('cos-refD/concepts_names.txt',encoding='utf-8') as f:
     for line in f:

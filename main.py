@@ -52,9 +52,9 @@ def get_concept_pairs(A,concept,n = 20):
 
 
 if __name__ == '__main__':
-    schools = ['prc']
+    schools = ['ruc_key']
     for school in schools:
-        X,links = read_file(school)
+        X,links,concept = read_file(school)
         print('Step 1: reading %s\'s file is done.==================='%school)
         links = links[:,[1,0]]
         X = row_normlize(X)
@@ -76,7 +76,7 @@ if __name__ == '__main__':
         print('测试集auc为{0}'.format(test_model_eval.auc(trn)))
         #weight_edge_list = visualization(F,percentile = 90)
         print('====================')
-        '''
+
         # 用全量数据训练模型
         triple = generate_triple(trn)
         A,F = model.cgl_rank(X,triple,lamb=0.001,eta=0.5,tolerence=0.004)
@@ -84,7 +84,6 @@ if __name__ == '__main__':
         print(weight_edge_list)
         top_n_pairs = get_concept_pairs(A, concept, n=50)
         print(top_n_pairs)
-        '''
         '''
         np.savetxt('result/A_cgl.txt',A)
         np.savetxt('result/F_cgl.txt',F)

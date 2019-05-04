@@ -30,6 +30,7 @@ def read_file(dataset):
         prereq_file = 'data/' + dataset + '.link'
     print(prereq_file)
     # 第一步首先把课程的bag-of-concept文件读取为一个稀疏矩阵
+    concept = []
     if not pathlib.Path(course_file).exists():
         X = pd.read_csv('data/' + dataset + '.csv', index_col=0)
         concept = list(X.columns)

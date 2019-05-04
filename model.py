@@ -12,12 +12,10 @@ def cgl_rank(X,triple,lamb,eta,silence=True,tolerence = 1e-6):
     r = 1
     F = K * B * K
     loss_func = lambda x: max((1 - F[x[0]-1,x[1]-1] + F[x[0]-1,x[2]-1]),0)**2
-    regularization_part = lamb/2 * (K * B * K*B).sum()
-        
+    regularization_part = lamb/2 * (K * B * K*B).sum()       
     loss_part = sum(list(map(loss_func,triple)))
+    # 按照定义计算loss，经常出现第一步损失变化为负的情况，所以先定义obj_old为Inf
     obj_old = np.inf
-        
-    last_loss = np.inf
     while True:
         Delta = np.zeros((n,n))
         F = K * B * K
@@ -27,31 +25,26 @@ def cgl_rank(X,triple,lamb,eta,silence=True,tolerence = 1e-6):
             sigma = max(0,1-F[i,j]+F[i,k])
             Delta[i,j] += sigma
             Delta[i,k] += -sigma
-        P = B - eta*(lamb*F - 2*K*Delta*K)       
-
-        #第一种终止条件：当前一步的B矩阵F范数的变化，以此作为终止准则
-        #c_loss = np.linalg.norm(B - (P + (r-1)/(r+2)*(P - Q)),ord = 'fro')
-        #第二种终止条件：当前一步的目标函数值的变化
-        regularization_part = lamb/2 * (K * B * K*B).sum()
-        
+        P = B - eta*(lamb*F - 2*K*Delta*K)
+        #终止条件：当前一步的目标函数值的变化
+        B = P + (r-1)/(r+2) * (P - Q)
+        Q = P
+        regularization_part = lamb/2 * (K * B * K*B).sum()        
         loss_part = sum(list(map(loss_func,triple)))
         obj = loss_part + regularization_part
-        c_loss = obj_old - obj
-        
-        if c_loss < tolerence:
-            break
-        
-        #if c_loss > last_loss:
+        loss_change = obj_old - obj       
+        if loss_change < tolerence:
+            print(r)
+            break     
+        #if loss_change > last_loss:
         #    eta = eta * 0.95
         #    continue
         obj_old = obj
-        last_loss = c_loss
-        B = P + (r-1)/(r+2) * (P - Q)
-        Q = P
         if (r%5 == 0) and (silence == False):
-            print("Iteration: %d, Lambda: %f B's 'f-norm' decreases: %f" %(r,eta,c_loss))
+            print("Iteration: %d, Lambda: %f B's 'f-norm' decreases: %f" %(r,eta,loss_change))
         r = r + 1
     A = X.transpose()*B*X
+    print(r)
     return(A,F)
 
 #transductive-cgl-rank算法    
@@ -76,20 +69,20 @@ def cgl_rank_trans(X,triple,lamb,eta,silence=False,tolerence = 0.01):
         
         P = F - eta*(lamb*F - 2*K*Delta*K - 2*Delta)       
         #当前一步的F矩阵F范数的变化，以此作为终止准则
-        c_loss = np.linalg.norm(F - (P + (r-1)/(r+2)*(P - Q)),ord = 'fro')
-        if c_loss < tolerence:
+        loss_change = np.linalg.norm(F - (P + (r-1)/(r+2)*(P - Q)),ord = 'fro')
+        if loss_change < tolerence:
             break
         
-        if c_loss > last_loss:
+        if loss_change > last_loss:
             eta = eta *0.95
             continue
-        last_loss = c_loss
+        last_loss = loss_change
         F = P + (r-1)/(r+2) * (P - Q)
         Q = P
         r = r + 1
         
         if (r%10 == 0) and (silence == False):
-            print("Step: %d, Lambda: %f B's 'f-norm' decreases: %f" %(r,eta,c_loss))
+            print("Step: %d, Lambda: %f B's 'f-norm' decreases: %f" %(r,eta,loss_change))
         
         #当前一步的目标函数值
         #regularization_part = lamb/2 * 
@@ -99,14 +92,18 @@ def cgl_rank_trans(X,triple,lamb,eta,silence=False,tolerence = 0.01):
     return(A,F)
 
 #sparse_cgl_rank算法
-def sparse_cgl_rank(X,triple,lamb,eta,silence=False,tolerence = 0.01):
+def sparse_cgl_rank(X,triple,lamb,eta,silence=False,tolerence = 0.00001):
     #初始化A,P,Q
     n,p = X.shape
     A = sparse.csr_matrix((p,p))
     P = sparse.csr_matrix((p,p))
     Q = sparse.csr_matrix((p,p))
     r = 1
-    last_loss = np.inf
+    F = X * A * X.transpose()
+    loss_func = lambda x: max((1 - F[x[0]-1,x[1]-1] + F[x[0]-1,x[2]-1]),0)**2
+    regularization_part = lamb * np.sum(abs(A))
+    loss_part = sum(list(map(loss_func,triple)))
+    obj_old = np.inf
     while True:
         Delta = np.zeros((n,n))
         F = X * A * X.transpose()
@@ -122,24 +119,23 @@ def sparse_cgl_rank(X,triple,lamb,eta,silence=False,tolerence = 0.01):
             tmp = np.array(list(map(soft_threshold,tmp,np.zeros_like(tmp)+lamb*eta)))
             tmp.shape = (len(tmp),1)
             P[:,j] = sparse.csr_matrix(tmp)
-        
-        c_loss = sparse.linalg.norm(A - (P + (k-1)/(k+2)*(P - Q)),ord = 'fro')
-        
-        if c_loss < tolerence:
-            break
-        
-        if c_loss > last_loss:
-            eta = eta *0.95
-            continue
-        last_loss = c_loss
-        A = P + (r-1)/(r+2)*(P-Q)
-        Q = P
+        # TO DO: adaptive step size
 
-        
+        A = P + (r-1)/(r+2)*(P-Q)
+        F = X * A * X.transpose()
+        Q = P
+        regularization_part = lamb * np.sum(abs(A))
+        loss_part = sum(list(map(loss_func, triple)))
+        obj = regularization_part + loss_part
+        loss_change =  obj_old - obj
+        if loss_change < tolerence:
+            print('Iteration stopped after {0} steps.'.format(r))
+            break
+        obj_old = obj
         if (r%10 == 0) and (silence == False):
-            print("Step: %d, Lambda: %f B's 'f-norm' decreases: %f" %(r,eta,c_loss))
-            r += 1
-    return(A,F) 
+            print("Step: %d, Lambda: %f B's 'f-norm' decreases: %f" %(r,eta,loss_change))
+        r += 1
+    return(A.toarray(),F.toarray())
 
      
             

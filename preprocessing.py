@@ -11,6 +11,17 @@ from sklearn.preprocessing import normalize
 import pandas as pd
 from scipy.sparse import csr_matrix
 
+def read_concept_dict():
+    concept_dict = {}
+    file = 'data/cos-refD/concepts_names.txt'
+    with open(file,encoding='utf-8') as f:
+        idx_num = 0
+        for line in f:
+            concept_dict.setdefault(idx_num,line.strip())
+            idx_num += 1
+    return concept_dict
+
+
 def read_file(dataset):
     course_file = 'data/' + dataset + '.lsvm'
     if dataset == 'ruc_key':
@@ -21,7 +32,9 @@ def read_file(dataset):
     # 第一步首先把课程的bag-of-concept文件读取为一个稀疏矩阵
     if not pathlib.Path(course_file).exists():
         X = pd.read_csv('data/' + dataset + '.csv', index_col=0)
+        concept = list(X.columns)
         X = csr_matrix(X)
+
     else:
         row = []
         word = []
@@ -41,7 +54,10 @@ def read_file(dataset):
         X = csr_matrix((data, (row, col)))
 
     links = np.loadtxt(prereq_file, delimiter=' ')
-    return (X, links)
+    if 'ruc' in 'ruc_key':
+        return (X, links, concept)
+    else:
+        return (X, links)
 
 
 ## 数据预处理

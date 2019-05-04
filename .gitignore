@@ -3,5 +3,4 @@ __pycache__
 .git/
 /data/cos-refD
 data/ruc*
-data/course_name.csv
 ref

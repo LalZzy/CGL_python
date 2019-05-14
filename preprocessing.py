@@ -96,7 +96,7 @@ def generate_trn(links, n):
     return trn
 
 
-def generate_triple(trn,sample = False):
+def generate_triple(trn,sample_size = None):
     # 生成课程的三元数对
     # return: 一个2维的np.array,类似[[1,2,4],[1,2,5]]，其中1为2的先修，4不为2的先修。???
     triple = np.array([[0, 0, 0]])
@@ -114,10 +114,10 @@ def generate_triple(trn,sample = False):
         v1 = np.ones_like(v3)
         v1[:, :] = i
         i_triple = np.concatenate([v1, v2, v3], axis=1)
-        if sample:
+        if sample_size:
             n = len(i_triple)
             sample = []
-            for i in range(int(0.8*n)):
+            for i in range(int(sample_size*n)):
                 sample.append(np.random.choice(range(n)))
             i_triple = i_triple[sample]
         triple = np.append(triple, i_triple, axis=0)

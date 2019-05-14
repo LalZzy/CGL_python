@@ -35,6 +35,18 @@ class evaluation():
                 n+=1
         mapl = metrics.average_precision_score(y_true,y_pred)
         return(mapl)
+
+
+def parameter_choose(eval_results):
+    '''
+    :param eval_result: 存储着不同参数训练得到的结果。[{'parameters':0.01,'evaluation':0.85}]
+    :return: 最大的那组参数。
+    '''
+    auc = np.array([eval_result['evaluation'] for eval_result in eval_results])
+    return eval_results[auc.argmax()]
+
+
+
 '''
 y_true = trn[:,2]
 y_pre = np.empty_like(y_true,dtype = np.float16)

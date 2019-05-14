@@ -52,7 +52,7 @@ def get_concept_pairs(A,concept,n = 20):
 
 
 if __name__ == '__main__':
-    schools = ['convex_key']
+    schools = ['school_key']
     for school in schools:
         X,links,concept = read_file(school)
         print('Step 1: reading %s\'s file is done.==================='%school)

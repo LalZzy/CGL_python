@@ -63,23 +63,29 @@ if __name__ == '__main__':
         triple_train = generate_triple(trn_train)
         print('Step 2: trn is generated.====================')
 
-        A,F = model.cgl_rank(X,triple_train,lamb=0.001,eta=0.5,tolerence=0.001,silence=False)
-        print('Step 3: model training is done.====================')
 
-        train_model_eval = evaluation(F,triple_train)
-        print('训练集auc(liu)为{0}'.format(train_model_eval.auc_liu()))
-        print('训练集auc为{0}'.format(train_model_eval.auc(trn)))
-        #print(train_model_eval.mapl(trn))
-        triple_test = generate_triple(trn_test)
-        test_model_eval = evaluation(F,triple_test)
-        print('测试集auc(liu)为{0}'.format(test_model_eval.auc_liu()))
-        print('测试集auc为{0}'.format(test_model_eval.auc(trn)))
-        #weight_edge_list = visualization(F,percentile = 90)
-        print('====================')
+        lambs = [0.001,0.002,0.003,0.01,0.1,0.2,0.5]
+        eval_res = []
+        for lamb in lambs:
+            A,F = model.cgl_rank(X,triple_train,lamb=lamb,eta=0.5,tolerence=0.001,silence=True)
+            print('Step 3: model training is done.====================')
 
+            train_model_eval = evaluation(F,triple_train)
+            print('训练集auc(liu)为{0}'.format(train_model_eval.auc_liu()))
+            print('训练集auc为{0}'.format(train_model_eval.auc(trn)))
+            #print(train_model_eval.mapl(trn))
+            triple_test = generate_triple(trn_test)
+            test_model_eval = evaluation(F,triple_test)
+            print('测试集auc(liu)为{0}'.format(test_model_eval.auc_liu()))
+            print('测试集auc为{0}'.format(test_model_eval.auc(trn)))
+            #weight_edge_list = visualization(F,percentile = 90)
+            print('====================')
+            eval_res.append({'parameter':lamb,'evaluation':test_model_eval.auc_liu()})
+        bst_para = parameter_choose(eval_res)
+        print('best parameter: lambda {} ,test auc: {}'.format(bst_para['parameter'],bst_para['evaluation']))
         # 用全量数据训练模型
         triple = generate_triple(trn)
-        A,F = model.cgl_rank(X,triple,lamb=0.001,eta=0.5,tolerence=0.004)
+        A,F = model.cgl_rank(X,triple,lamb=bst_para['parameter'],eta=0.5,tolerence=0.004)
         weight_edge_list = visualization(F,percentile = 90)
         print(weight_edge_list)
         top_n_pairs = get_concept_pairs(A, concept, n=50)

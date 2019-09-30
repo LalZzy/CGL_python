@@ -46,18 +46,24 @@ def parameter_choose(eval_results):
     return eval_results[auc.argmax()]
 
 
+def get_concept_pairs(A,concept,n = 20):
+    top_n_Aij = list(-np.sort(-A,axis=None)[0:n])
+    top_n_A_index = list(map(lambda x: np.argwhere(A == x),top_n_Aij))
+    result = [[concept[i[0][0]],concept[i[0][1]],
+               round(A[i[0][0],i[0][1]],4)]
+              for i in top_n_A_index]
+    return result
 
-'''
-y_true = trn[:,2]
-y_pre = np.empty_like(y_true,dtype = np.float16)
-y_pre
-k = 0
-for i in range(len(F)):
-    for j in range(len(F)):
-        if i == j:continue
-        y_pre[k] = F[i,j]
-        k+=1
-        
-from sklearn import metrics
-eval_auc(F,triple)
-'''
+def generate_course_pairs(F,percentile = 99.5):
+    threshold = np.percentile(F,percentile)
+    edge = np.argwhere(F>threshold)+1
+    edge = edge[edge[:,0] != edge[:,1]]
+    node = []
+    for i in range(len(edge)):
+        for j in range(2):
+            node.append(edge[i,j])
+    weight = np.round(F[edge[:,0]-1,edge[:,1]-1],decimals = 7)
+    weight.shape = (weight.shape[0],1)
+    weight_edge = np.append(edge[:,[1,0]],weight,axis = 1)
+    weight_edge_list = [i.tolist() for i in weight_edge]
+    return(weight_edge_list)

@@ -21,26 +21,16 @@ def read_concept_dict():
             idx_num += 1
     return concept_dict
 
-
-def read_file(dataset):
-    course_file = 'data/' + dataset + '.lsvm'
-    if dataset == 'ruc_key':
-        prereq_file = 'data/ruc.link'
-    else:
-        prereq_file = 'data/' + dataset + '.link'
-    print(prereq_file)
+def read_file(data_file,link_file,dense_input = True):
     # 第一步首先把课程的bag-of-concept文件读取为一个稀疏矩阵
     concept = []
-    if not pathlib.Path(course_file).exists():
-        X = pd.read_csv('data/' + dataset + '.csv', index_col=0)
+    if dense_input:
+        X = pd.read_csv(data_file, index_col=0)
         concept = list(X.columns)
         X = csr_matrix(X)
-
     else:
-        row = []
-        word = []
-        data = []
-        with open(course_file, 'r') as f:
+        row,word,data = [],[],[]
+        with open(data_file, 'r') as f:
             for i in f:
                 tmp = i.strip().split(' ')
                 for j in tmp[1:]:
@@ -54,12 +44,11 @@ def read_file(dataset):
 
         X = csr_matrix((data, (row, col)))
 
-    links = np.loadtxt(prereq_file, delimiter=' ')
+    links = np.loadtxt(link_file, delimiter=' ')
     if 'ruc' in 'ruc_key':
         return (X, links, concept)
     else:
         return (X, links)
-
 
 ## 数据预处理
 def row_normlize(X):
@@ -95,9 +84,9 @@ def generate_trn(links, n):
     return trn
 
 
-def generate_triple(trn):
+def generate_triple(trn,sample_size = None):
     # 生成课程的三元数对
-    # return: 一个2维的np.array,类似[[1,2,4],[1,2,5]]，其中1为2的先修，4不为2的先修。
+    # return: 一个2维的np.array,类似[[1,2,4],[1,2,5]]，其中1为2的先修，4不为2的先修。???
     triple = np.array([[0, 0, 0]])
     pos_prelink = trn[trn[:, 2] == 1,]
     neg_prelink = trn[trn[:, 2] == 0,]
@@ -113,5 +102,11 @@ def generate_triple(trn):
         v1 = np.ones_like(v3)
         v1[:, :] = i
         i_triple = np.concatenate([v1, v2, v3], axis=1)
+        if sample_size:
+            n = len(i_triple)
+            sample = []
+            for i in range(int(sample_size*n)):
+                sample.append(np.random.choice(range(n)))
+            i_triple = i_triple[sample]
         triple = np.append(triple, i_triple, axis=0)
     return (triple[1:, :])

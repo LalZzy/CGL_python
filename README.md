@@ -9,5 +9,13 @@ This is an python version inplementation of [CGL(concept graph learning)](https:
 download it, cd into the directory and run
 ```shell
 pip3 install -r requirement.txt
-python main.py
 ```
+
+* STEP 1:  cd `'./data'`
+* STEP 2:  make sure everybook's word_info file exists: `'result_all_word/result_all_word_info_[bookname].csv'`
+and all concepts' json file exists:`'./all_concepts.json'`
+* STEP 3: according to priori knowledge, give the prerequiste relations between and chapters:`'chapter_prerequisite.csv'`
+* STEP 4: run `python generate_link.py` 
+* STEP 5: run `python readygo.py`
+* STEP 6: cd `'../'` （return to parent directory）
+* STEP 7: run `python main.py`

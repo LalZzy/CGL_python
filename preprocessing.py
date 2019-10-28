@@ -10,38 +10,18 @@ import pathlib
 from sklearn.preprocessing import normalize
 import pandas as pd
 from scipy.sparse import csr_matrix
-import random
-
-def read_concept_dict():
-    concept_dict = {}
-    file = 'data/cos-refD/concepts_names.txt'
-    with open(file,encoding='utf-8') as f:
-        idx_num = 0
-        for line in f:
-            concept_dict.setdefault(idx_num,line.strip())
-            idx_num += 1
-    return concept_dict
 
 
-def read_file(dataset):
-    course_file = 'data/' + dataset + '.lsvm'
-    if dataset == 'ruc_key':
-        prereq_file = 'data/ruc.link'
-    else:
-        prereq_file = 'data/' + dataset + '.link'
-    print(prereq_file)
+def read_file(data_file,link_file,dense_input = True):
     # 第一步首先把课程的bag-of-concept文件读取为一个稀疏矩阵
     concept = []
-    if not pathlib.Path(course_file).exists():
-        X = pd.read_csv('data/' + dataset + '.csv', index_col=0,encoding='ISO-8859-1')
+    if dense_input:
+        X = pd.read_csv(data_file, index_col=0)
         concept = list(X.columns)
         X = csr_matrix(X)
-
     else:
-        row = []
-        word = []
-        data = []
-        with open(course_file, 'r') as f:
+        row,word,data = [],[],[]
+        with open(data_file, 'r') as f:
             for i in f:
                 tmp = i.strip().split(' ')
                 for j in tmp[1:]:
@@ -55,29 +35,17 @@ def read_file(dataset):
 
         X = csr_matrix((data, (row, col)))
 
-    links = np.loadtxt(prereq_file, delimiter=' ')
+    links = np.loadtxt(link_file, delimiter=' ')
     if 'ruc' in 'ruc_key':
         return (X, links, concept)
     else:
         return (X, links)
 
-
 ## 数据预处理
 def row_normlize(X):
     return (normalize(X, norm='l1', axis=1))
 
-#def tf_idf(X):
-
-
 ## 根据课程间先修关系，来生成(i,j,k)三元组，其中i表示第i门课，j表示课程i的先修，k表示非课程i的先修
-
-
-def inlinks(x, links):
-    for i in links:
-        if (sum(i == x) == len(x)):
-            return 1
-            break
-    return 0
 
 
 def generate_trn(links, n):
@@ -122,4 +90,3 @@ def generate_triple(trn,sample_size = None):
             i_triple = i_triple[sample]
         triple = np.append(triple, i_triple, axis=0)
     return (triple[1:, :])
-

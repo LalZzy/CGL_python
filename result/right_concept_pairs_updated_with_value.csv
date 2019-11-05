@@ -1,0 +1,11 @@
+source,target,value1
+independent,brownian motion,9.5311
+markov process,gibbs sampler,9.47
+likelihood,maximum likelihood estimator,8.4775
+random variable,variance,8.1154
+variable,random variable,7.4379
+random variable,stochastic process,7.1443
+random variable,stochastic process,6.6082
+brownian motion,square integrable martingale,5.5485
+descent,newton step,5.0701
+independent,poisson process,5.0372

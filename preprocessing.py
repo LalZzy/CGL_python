@@ -11,15 +11,6 @@ from sklearn.preprocessing import normalize
 import pandas as pd
 from scipy.sparse import csr_matrix
 
-def read_concept_dict():
-    concept_dict = {}
-    file = 'data/cos-refD/concepts_names.txt'
-    with open(file,encoding='utf-8') as f:
-        idx_num = 0
-        for line in f:
-            concept_dict.setdefault(idx_num,line.strip())
-            idx_num += 1
-    return concept_dict
 
 def read_file(data_file,link_file,dense_input = True):
     # 第一步首先把课程的bag-of-concept文件读取为一个稀疏矩阵
@@ -54,18 +45,7 @@ def read_file(data_file,link_file,dense_input = True):
 def row_normlize(X):
     return (normalize(X, norm='l1', axis=1))
 
-#def tf_idf(X):
-
-
 ## 根据课程间先修关系，来生成(i,j,k)三元组，其中i表示第i门课，j表示课程i的先修，k表示非课程i的先修
-
-
-def inlinks(x, links):
-    for i in links:
-        if (sum(i == x) == len(x)):
-            return 1
-            break
-    return 0
 
 
 def generate_trn(links, n):

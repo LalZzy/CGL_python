@@ -33,7 +33,8 @@ def cgl_rank(X,triple,lamb,eta,silence=True,tolerence = 1e-6,round = 10):
             Q = P
             regularization_part = lamb/2 * (K * B * K*B).sum()
             loss_part = sum(list(map(loss_func,triple)))
-            obj = loss_part + regularization_part
+            obj = loss_part + regularization_part  
+            #print('old loss function: {}, new loss function: {}'.format(obj_old,obj))
             if obj_old < obj:
                 eta = eta * 0.95
                 # 此时并非发生更新，还原B,F矩阵
@@ -141,9 +142,3 @@ def sparse_cgl_rank(X,triple,lamb,eta,silence=False,tolerence = 0.00001):
             print("Step: %d, Lambda: %f B's 'f-norm' decreases: %f" %(r,eta,loss_change))
         r += 1
     return(A.toarray(),F.toarray())
-
-     
-            
-     
-    
-    

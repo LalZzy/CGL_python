@@ -1,0 +1,3000 @@
+distributions,markov process,25.3913
+marginal,marginal,23.4965
+markov process,stopping time,23.3053
+sample,random variable,23.0825
+correlation,variable,22.278
+optimization,random sample,20.8516
+markov process,itˆo’s formula,20.7993
+probability,markov process,20.1246
+logistic model,logistic model,19.4475
+mean,random variable,19.3085
+random effects,gee,19.2546
+correlation,predictor,19.0751
+markov process,local martingale,19.0568
+markov process,continuous,18.9986
+markov process,probability,18.7886
+markov process,stochastic integral,18.4758
+logistic model,random variable,18.1178
+distribution,markov process,18.113
+logistic model,expected,17.5271
+semigroup,markov process,17.4764
+semigroup,continuous function,17.4475
+error,random variable,17.3728
+sample,spline,17.2317
+variable,spline,16.974
+gee,marginal,16.5309
+continuous,expected,16.3048
+markov process,random variable,16.1858
+mean,log likelihood,16.0848
+logit,random variable,16.0578
+logit,logit,16.0261
+estimator,random variable,15.8829
+mcmc,markov process,15.6919
+cox model,maximum likelihood estimator,15.6612
+logistic model,spline,15.5013
+brownian motion,random variable,15.4776
+probability,joint,15.4738
+normal,joint,15.4672
+variance,markov process,15.3687
+distribution,descent,15.3197
+variance,likelihood,15.2873
+univariate,markov process,15.1114
+mean,joint,15.0552
+normal,probability,14.9996
+martingale problem,martingale,14.8713
+stopping time,filtration,14.8604
+gradient,descent,14.8363
+bounded,expected,14.7681
+sample,simulating,14.7616
+continuous,markov process,14.6323
+brownian motion,expected,14.4566
+probability,binomial,14.3762
+random variables,markov process,14.276
+borel,itˆo’s formula,14.2067
+policy,policy,14.1638
+gaussian,markov process,14.1375
+likelihood,normal,14.1355
+filtration,normal,14.0727
+martingale problem,markov process,14.0475
+random effects,marginal,14.0428
+markov process,bounded,13.9657
+predictor,spline,13.9475
+l´evy process,markov process,13.883
+convergence,markov process,13.8205
+distribution,random sample,13.7868
+filtration,random variable,13.7166
+mean,likelihood,13.6763
+mean,expected,13.6553
+continuous,trials,13.4917
+continuous,probability mass function,13.4071
+odds,binomial,13.3812
+semigroup,borel,13.3412
+conditional,binomial,13.221
+parameter,joint,13.1775
+gradient,newton,13.1109
+bayesian,joint,13.061
+logistic model,log likelihood,13.0456
+mean,expected value,13.0391
+censored data,mean,13.0306
+convergence,sample,12.9932
+markov process,square integrable martingale,12.985
+multinomial,random variable,12.8978
+odds,logistic model,12.8842
+optimization,average,12.8159
+sampling,simulating,12.8045
+martingale problem,bounded,12.7199
+probability,probability mass function,12.7044
+likelihood,likelihood,12.6967
+poisson,binomial,12.6741
+variable,joint,12.6734
+poisson,p-value,12.6662
+mean,probability mass function,12.6532
+gradient,random variable,12.613
+variance,random sample,12.5626
+mean,hypothesis,12.5378
+optimization,convergence,12.5044
+log likelihood,likelihood,12.4075
+likelihood,random sample,12.4021
+cauchy,markov process,12.3503
+probability,probability,12.308
+mcmc,mcmc,12.1866
+stochastic integral,filtration,12.1555
+markov process,increasing process,12.1448
+error,independent,12.1371
+log likelihood,independent,12.1239
+normal,likelihood,11.9156
+l´evy process,martingale,11.8967
+bounded,maximum a posteriori probability,11.8826
+markov process,norm,11.7926
+filtration,independent,11.775
+bounded,mean,11.7669
+borel,stochastic integral,11.7436
+convex optimization,domain,11.7196
+cox model,weibull,11.6555
+distribution,stationary,11.6552
+factor,expected,11.634
+independent,joint,11.6216
+marginal,poisson,11.6112
+probability,trials,11.6034
+likelihood,joint,11.5928
+stochastic integral,brownian motion,11.5826
+correlation,missing data,11.5778
+probability,boundary,11.5637
+logit,generalized linear,11.5323
+bounded,poisson,11.5308
+policy,approximate,11.527
+distributions,borel,11.511
+bounded,brownian motion,11.4745
+poisson,multinomial,11.4665
+semigroup,martingale,11.404
+convergence,convergence,11.396
+mean,trials,11.3891
+domain,affine,11.3848
+sample,descent,11.3396
+bayesian,normal,11.3301
+probability,random variable,11.33
+convergence,random sample,11.2825
+optimization,markov process,11.2608
+mcmc,stationary,11.2549
+continuous,expected value,11.2384
+random effects,response,11.1996
+fuzzy q-iteration,approximate,11.1977
+variance,joint,11.1455
+logit,poisson,11.1442
+random variable,brownian motion,11.1271
+boundary,probability,11.1086
+aic,variable,11.0413
+likelihood,independent,11.0183
+bounded,continuous function,10.986
+markov process,minimal augmented filtration,10.9722
+random variable,mean,10.9674
+optimization,sample,10.9471
+independence,odds,10.9451
+random variable,filtration,10.9309
+optimization,newton’s method,10.9106
+value function,filtration,10.905
+error,hessian,10.9017
+matrix,markov process,10.901
+censored data,median,10.8663
+convergence,likelihood,10.865
+maximum likelihood estimator,markov process,10.8554
+chains,mcmc,10.8338
+dual,convex optimization,10.8186
+poisson process,probability,10.7866
+censored data,quantile,10.728
+natural scale,predictable,10.7241
+variance,hypothesis,10.6739
+domain,martingale,10.6433
+bounded,gaussian,10.6166
+markov process,conditional,10.5889
+variance,stationary,10.5836
+conditional,generalized linear,10.5663
+markov chain,markov process,10.564
+generalized linear,p-value,10.5322
+logistic model,statistic,10.5308
+gradient,convergence,10.5043
+bounded,cantor,10.4897
+normal,independent,10.4771
+convergence,log likelihood,10.4659
+sample,simulation,10.4659
+spline,expected,10.4456
+distribution,random variable,10.4393
+error,descent,10.418
+conditional,deviance,10.4053
+marginal,binomial,10.4025
+sample,integral,10.3999
+bayesian,variance,10.3767
+gradient,newton’s method,10.3708
+logistic model,maximum likelihood estimator,10.3463
+conditional,joint,10.331
+natural scale,martingale,10.3165
+probability,expected,10.3058
+asymptotic,mean,10.2997
+martingale problem,continuous function,10.2495
+independent,probability mass function,10.2433
+cauchy problem,markov process,10.2167
+borel,local martingale,10.2077
+response,random variable,10.2048
+sample,uniform,10.2033
+mean,residual,10.1872
+conditional,likelihood,10.1871
+martingale problem,predictable,10.185
+calibration,spline,10.183
+error,gradient,10.1801
+quantile,logistic model,10.1798
+log likelihood,joint,10.1687
+semigroup,cantor,10.1592
+maximum likelihood,independent,10.15
+variance,expected,10.1402
+cox model,log-logistic distribution,10.1073
+log likelihood,log likelihood,10.0996
+matrix,likelihood,10.0931
+probability,descent,10.0928
+continuous,mean,10.0889
+random variable,markov process,10.0271
+mean,stationary,10.0256
+itˆo’s formula,submartingale,10.0237
+markov process,null set,10.0164
+mean,trial,10.0115
+distribution,boundary,9.9966
+independent,probability,9.9765
+optimization,log likelihood,9.9685
+variance,normal,9.9635
+descent,dual,9.9577
+markov process,continuous martingale,9.9473
+variance,unbiased,9.9457
+semigroup,information,9.9441
+curve fitting,kernel,9.9302
+curve fitting,kernel,9.9302
+itˆo’s formula,filtration,9.9119
+chi-squared,odds,9.906
+normal,variance,9.8989
+sample,expected,9.8964
+continuous,trial,9.8805
+independent,normal,9.8644
+optimization,likelihood,9.8205
+maximum likelihood,probability,9.7929
+natural scale,markov process,9.7824
+gradient,quadratic,9.7789
+filtration,expected,9.7732
+binary,expected,9.768
+variance,variance,9.7497
+sampling,convergence,9.7438
+p-value,odds,9.743
+independent,independent,9.7304
+random effects,correlation,9.6941
+generalized linear,binomial,9.678
+continuous,filtration,9.6758
+distribution,joint,9.6657
+sample,binomial,9.6449
+borel,random variable,9.6442
+mean,maximum likelihood estimator,9.6403
+negative binomial,marginal,9.6377
+random effects,poisson,9.6365
+independent,binomial,9.6323
+cox model,censored data,9.6268
+distributions,least excessive majorant,9.6244
+log likelihood,random sample,9.6078
+log likelihood,normal,9.604
+probability,expected value,9.584
+statistic,random variable,9.5619
+independent,likelihood,9.5493
+bounded,probability mass function,9.5445
+itˆo’s formula,expected,9.5361
+brownian motion,independent,9.5311
+approximate,descent,9.5272
+nonlinear,expected,9.5192
+mcmc,borel,9.5164
+sampling,descent,9.5159
+mcmc,sample,9.4858
+l´evy process,predictable,9.4798
+policy,value function,9.4739
+gibbs sampler,markov process,9.47
+maximum likelihood estimator,random sample,9.4648
+sample,quadratic,9.4545
+semigroup,product,9.4353
+distributions,markov property,9.4331
+itˆo’s formula,random variables,9.428
+logit,binomial,9.4248
+likelihood,exponential,9.4168
+likelihood,log likelihood,9.387
+poisson,chi-squared,9.3768
+logit,logistic regression,9.3632
+distributions,boundary,9.3615
+predictable,filtration,9.359
+marginal,generalized linear,9.3539
+bayesian,conditional,9.344
+semigroup,variable,9.3407
+continuous,continuous,9.3381
+stopping time,random variables,9.3244
+variable,predictor,9.3234
+stochastic integral,h¨older continuous,9.3196
+brownian motion,probability mass function,9.317
+gradient,newton step,9.2843
+binary,random variable,9.2723
+conditional,poisson,9.2669
+log likelihood,probability,9.2565
+pearson,odds,9.2456
+response,expected,9.2376
+bounded,martingale,9.2343
+mcmc,points,9.2315
+cox model,parameter,9.2077
+variance,residual,9.2076
+predictor,predictor,9.1908
+bounded,markov process,9.1665
+markov process,brownian motion,9.1616
+parameter,random sample,9.1615
+weak uniqueness,markov process,9.1582
+fuzzy q-iteration,policy,9.1578
+approximate,probability,9.1527
+normal,log likelihood,9.1472
+bounded,expected value,9.1444
+bayesian,log likelihood,9.1377
+natural scale,continuous function,9.1319
+variable,variable,9.1301
+random variable,h¨older continuous,9.1268
+residual,likelihood,9.1246
+mcmc,poisson process,9.1238
+error,probability,9.1195
+nonlinear,independent,9.1146
+itˆo’s formula,properties,9.109
+borel,martingale,9.0738
+sparse,variable,9.0532
+continuous,binomial,9.0373
+stepwise,spline,9.0231
+parameter,log likelihood,9.0159
+policy,descent,9.0115
+continuous,random variable,9.0042
+variance,boundary,9.0025
+glmm,gee,8.9926
+logit,odds,8.9795
+weak convergence,markov process,8.9744
+normal,random sample,8.9719
+logit,parameter,8.9631
+l´evy process,bounded,8.9517
+binomial,binomial,8.9078
+bounded,h¨older continuous,8.907
+stopping time,h¨older continuous,8.8943
+gaussian,central limit theorem,8.8924
+maximum likelihood estimator,log likelihood,8.8916
+odds,poisson,8.8892
+bounded,trials,8.8861
+brownian motion,trials,8.8813
+bounded,trial,8.881
+markov chain,simulating,8.8807
+gradient,backtracking,8.8671
+error,expected,8.8617
+shrinkage,spline,8.8591
+poisson point process,brownian motion,8.8575
+estimation,normal,8.8112
+borel,continuous,8.8069
+l´evy process,continuous function,8.7956
+regularization,newton step,8.7917
+bayesian,likelihood,8.7869
+distributions,stationary,8.7807
+characteristic function,markov process,8.7625
+marginal,gee,8.7572
+parameter,likelihood,8.7533
+characteristic function,martingale,8.7236
+mcmc,envelope,8.7179
+semigroup,predictable,8.7076
+probability,strong markov property,8.7016
+cluster,logistic model,8.6803
+submartingale,probability,8.6795
+variable,probability mass function,8.6786
+distributions,strong markov process,8.6776
+deep learning,descent,8.6705
+conditional,log likelihood,8.6618
+strong markov property,bounded,8.6614
+martingale,expected,8.6581
+least excessive majorant,stopping time,8.6574
+bounded,least excessive majorant,8.6405
+natural scale,cantor,8.635
+variance,log likelihood,8.6309
+semigroup,distribution,8.6281
+quasi-likelihood,marginal,8.6163
+confidence interval,probability,8.6136
+brownian motion,itˆo’s formula,8.5968
+brownian bridge,markov process,8.582
+hypothesis,independent,8.5726
+probability,least excessive majorant,8.56
+stopping time,brownian motion,8.5565
+joint,joint,8.5565
+gradient,probability,8.538
+parameter,markov process,8.5248
+brownian motion,continuous,8.4972
+probability,continuous function,8.4954
+brownian motion,trial,8.4841
+conditional,logistic model,8.4833
+maximum likelihood estimator,likelihood,8.4775
+strong markov property,martingale,8.4768
+weibull,censored data,8.4739
+value function,random variables,8.4712
+distributions,bounded,8.4705
+predictor,maximum likelihood estimator,8.4619
+mean,linear regression,8.4504
+cumulative,logistic model,8.4213
+martingale problem,cantor,8.421
+mean,unbiased,8.4198
+conditional,independent,8.4187
+median,quantile,8.4123
+borel,stopping time,8.4025
+independent,random variable,8.3857
+variance,trials,8.3817
+likelihood,probability,8.3737
+continuous,stochastic process,8.3701
+cox model,log likelihood,8.3666
+information,joint,8.3536
+logit,glm,8.3429
+logistic model,matrix,8.3387
+sample,joint,8.3328
+chi-squared,random variable,8.3231
+poisson,filtration,8.3205
+continuous,brownian motion,8.3053
+log-logistic distribution,censored data,8.3047
+distribution,convergence,8.302
+generalized linear,chi-squared,8.2914
+random effects,generalized linear,8.289
+semigroup,least excessive majorant,8.2886
+power,random variable,8.2806
+sample,confidence interval,8.2738
+estimation,joint,8.2643
+sample,probability mass function,8.2488
+continuous,boundary,8.2358
+itˆo’s formula,normal,8.2315
+logistic model,binary,8.2258
+components,variable,8.2257
+mean,binomial,8.2246
+mcmc,markov property,8.2187
+optimization,cumulant-generating function,8.2168
+distribution,markov property,8.2137
+domain,points,8.21
+bias,independent,8.1977
+semigroup,gaussian,8.1959
+markov property,probability,8.191
+conditional,nonlinear,8.1902
+poisson’s equation,markov process,8.1734
+sample,convergence,8.1733
+odds ratio,binomial,8.1681
+logistic regression,logistic model,8.1654
+logistic model,log odds,8.1617
+envelope,integral,8.147
+contrast,variable,8.1393
+curve fitting,curve fitting,8.1386
+curve fitting,curve fitting,8.1386
+curve fitting,curve fitting,8.1386
+curve fitting,curve fitting,8.1386
+dual,optimization,8.1382
+logistic model,binomial,8.13
+univariate,borel,8.118
+variance,random variable,8.1154
+logistic model,expected value,8.1003
+cox model,events,8.0979
+discrete,filtration,8.0939
+odds,inference,8.0819
+gradient,poisson,8.0805
+estimation,independent,8.0712
+finite-dimensional distributions,markov process,8.0619
+continuous,submartingale,8.0592
+random variable,random variables,8.0588
+continuous,least excessive majorant,8.0535
+filtration,joint,8.0311
+logistic model,parameter,8.0128
+least excessive majorant,itˆo’s formula,8.0111
+value function,brownian motion,8.0061
+negative binomial,gee,7.9966
+stochastic integral,submartingale,7.9752
+value function,h¨older continuous,7.9666
+distributions,additive functional,7.9608
+median,median,7.9502
+poisson,independence,7.9402
+filtration,random variables,7.934
+odds,binary,7.9312
+bayesian,residual,7.9282
+markov process,fourier transform,7.9134
+predictable,submartingale,7.9098
+variable selection,spline,7.9085
+normal,normal,7.9059
+estimator,expected,7.8964
+probabilities,markov process,7.8956
+factor,random variable,7.8652
+log likelihood,variance,7.8643
+itˆo’s formula,h¨older continuous,7.8626
+gradient,expected,7.8558
+product,markov process,7.8477
+stopping time,parameter,7.8425
+optimization,gamma,7.8411
+borel,norm,7.8318
+conditional,trials,7.8287
+sampling,mcmc,7.8109
+estimator,normal,7.8094
+properties,random variable,7.8091
+distribution,likelihood,7.8079
+markov process,conditional probability,7.806
+martingale problem,borel,7.8002
+filtration,submartingale,7.7983
+dirichlet,martingale,7.7972
+martingale problem,information,7.7888
+variance,probability mass function,7.7887
+binary,spline,7.7832
+weak uniqueness,martingale,7.781
+markov property,stopping time,7.7777
+poisson process,random variable,7.7772
+variance,unbiased estimator,7.7767
+markov property,random variable,7.7758
+bayesian,random sample,7.7441
+least excessive majorant,probability,7.7414
+error,joint,7.7331
+binary,logistic model,7.7327
+filtration,probability,7.7303
+l´evy process,cantor,7.7123
+brownian motion,expected value,7.7011
+independent,trials,7.7006
+distribution,hessian,7.695
+closure,markov process,7.6905
+regularization,newton,7.6894
+approximation,filtration,7.6812
+glmm,marginal,7.6578
+normal,random variable,7.648
+distribution,backtracking,7.6478
+continuous function,bounded,7.6426
+logistic regression,random variable,7.6412
+marginal,deviance,7.6376
+probability,approximate,7.6201
+l´evy process,information,7.6155
+brownian motion,brownian motion,7.6071
+bounded,integral,7.5876
+asymptotic,random variable,7.5873
+distribution,trials,7.5865
+markov chain,stationary,7.5768
+variance,markov property,7.5759
+continuous function,probability,7.5753
+binomial,p-value,7.5526
+aic,sample,7.5471
+covariance,markov process,7.5145
+sample,envelope,7.4923
+tight,markov process,7.49
+nonlinear,random variable,7.4883
+cauchy,central limit theorem,7.4872
+mcmc,simulation,7.4853
+parameter,convergence,7.4839
+bayesian,stationary,7.4817
+random variable,borel,7.4795
+generalized linear,inference,7.4698
+univariate,sample,7.4674
+p-value,random variable,7.4599
+poisson,gee,7.4526
+mean,distribution function,7.4472
+pearson,random variable,7.4424
+variable,random variable,7.4379
+independent,trial,7.4377
+approximation,mean,7.429
+generalized linear,multinomial,7.4249
+variance,expected value,7.4211
+normal,trials,7.4181
+domain,markov process,7.4149
+statistics,markov process,7.4146
+semigroup,maximum a posteriori probability,7.4067
+l´evy process,product,7.4004
+natural scale,product,7.3957
+error,trials,7.3909
+least excessive majorant,stochastic integral,7.39
+convergence,multivariate,7.386
+independent,variance,7.3854
+optimization,maximum likelihood,7.3807
+parameter,binomial,7.3714
+pareto optimal,domain,7.3708
+predictor,joint,7.3556
+markov process,semimartingales,7.3511
+additive functional,stopping time,7.3491
+information,independent,7.3379
+variance,bias,7.331
+stochastic integral,random variables,7.3294
+matrix,log likelihood,7.3248
+p-value,independent,7.3227
+aic,predictor,7.3018
+conditional,glm,7.2968
+logit,statistic,7.2866
+aic,nonlinear,7.2834
+independent,expected,7.2801
+logistic regression,logistic regression,7.2795
+constraint,domain,7.2795
+random variable,continuous,7.2724
+log likelihood,exponential,7.2697
+independent,expected value,7.2677
+exponential,probability,7.2589
+binomial,random variable,7.2545
+bayesian,markov process,7.2467
+local martingale,filtration,7.2424
+conditional,probability mass function,7.2406
+odds,generalized linear,7.2395
+response,likelihood,7.2339
+dual,pareto optimal,7.2194
+conditional,exponential,7.1978
+parameter,trials,7.1962
+sample,normal,7.1852
+borel,bounded,7.1821
+discrete,normal,7.1808
+maximum likelihood,joint,7.1802
+sample,expected value,7.1786
+error,gradient descent,7.1728
+natural scale,borel,7.1718
+stopping time,submartingale,7.165
+mean,logistic model,7.1618
+boundary,stopping time,7.1593
+least excessive majorant,bounded,7.155
+stopping time,stopping time,7.1471
+stochastic process,random variable,7.1443
+continuous,logistic model,7.138
+distribution,normal,7.1234
+mean,probability,7.1097
+likelihood,confidence interval,7.1063
+optimization,order statistics,7.1017
+borel,square integrable martingale,7.0915
+mean,sum of squares,7.0809
+brownian motion,norm,7.0788
+estimator,probability,7.0756
+convergence,newton’s method,7.0742
+error,second derivative,7.0569
+cox model,hazard ratio,7.0542
+random variable,poisson process,7.0527
+importance sampling,integral,7.0476
+continuous,h¨older continuous,7.0455
+normal,probability mass function,7.0413
+independent,gaussian,7.0352
+optimization,multivariate,7.0327
+response,hypothesis,7.0264
+deep learning,hessian,7.0229
+response,linear regression,7.0113
+p-value,joint,7.009
+mean,boundary,7.007
+variance,linear regression,7.0013
+distributions,strong markov property,6.9972
+martingale problem,variable,6.9727
+random variable,properties,6.9721
+correlation,marginal,6.9668
+sample,distribution function,6.9594
+covariance,mean,6.9558
+approximation,convergence,6.9485
+cumulative,random variable,6.9457
+policy search,policy,6.9452
+aic,convergence,6.9369
+random variables,boundary,6.9318
+variance,sum of squares,6.9288
+distribution,gee,6.9246
+bounded,stochastic process,6.9191
+natural scale,weak uniqueness,6.9182
+hazard ratio,censored data,6.9079
+cox model,expected value,6.9073
+shrinkage,independent,6.9041
+convergence,univariate,6.8967
+factor,descent,6.8938
+distribution,gamma,6.8912
+probability,trial,6.8894
+likelihood,gamma,6.8884
+borel,brownian motion,6.8851
+joint,independent,6.8838
+probability,stationary,6.8762
+mean,hypergeometric,6.8732
+random effects,quasi-likelihood,6.8603
+logit,likelihood equations,6.86
+stopping time,properties,6.8579
+mean,normal,6.8428
+variance,interpretation,6.841
+manifold,random variable,6.836
+hypothesis,normal,6.8304
+univariate,likelihood,6.8299
+odds ratio,poisson,6.8286
+independent,cantor,6.8284
+approximate,convergence,6.8159
+conditional,variance,6.8158
+poisson,brownian motion,6.8151
+convergence,stationary,6.815
+poisson,gaussian,6.8102
+conditional,hypothesis,6.8055
+parameter,stationary,6.8026
+properties,joint,6.8019
+mean,unbiased estimator,6.8014
+deep learning,gradient,6.8004
+mcmc,importance sampling,6.7975
+response,residual,6.794
+exponential,likelihood,6.7932
+probability,newton’s method,6.79
+normal,hypothesis,6.7898
+independent,log likelihood,6.7861
+stopping time,normal,6.7853
+bounded,expectation,6.7852
+distribution,mean,6.7823
+random effects,glm,6.7816
+least excessive majorant,random variable,6.777
+conditional,bias,6.7726
+increasing process,filtration,6.7708
+logistic model,logit,6.7702
+matrix,domain,6.763
+stochastic integral,properties,6.7523
+bounded,binomial,6.7501
+discrete,parameter,6.7429
+variable,independent,6.7374
+residual,log likelihood,6.7336
+residual,hypothesis,6.7246
+stopping time,stochastic process,6.7226
+mean,quantile,6.7195
+probability,central limit theorem,6.7165
+mean,variance,6.7045
+independent,residual,6.6965
+approximation,random sample,6.6922
+probability,log likelihood,6.6895
+brownian motion,binomial,6.6845
+distribution,probability mass function,6.6817
+response,probability mass function,6.6771
+random variable,boundary,6.6741
+bounded,filtration,6.6665
+multivariate,curve fitting,6.662
+multivariate,curve fitting,6.662
+continuous function,markov process,6.6603
+domain,dual,6.6556
+mean,descent,6.6554
+sum of squares,likelihood,6.6486
+bounded,variable,6.6483
+gradient,hessian,6.6419
+variable,trials,6.6348
+optimization,poisson process,6.6258
+norm,continuous function,6.6232
+boundary,itˆo’s formula,6.6223
+chi-squared,probability,6.6161
+marginal,variance,6.6155
+boundary,bounded,6.6135
+poisson,inference,6.6129
+strong markov property,itˆo’s formula,6.6114
+curve fitting,bandwidth,6.6108
+curve fitting,bandwidth,6.6108
+variance,trial,6.6089
+logistic regression,logit,6.6083
+random variable,stochastic process,6.6082
+generalized linear,sample,6.606
+logistic model,variance,6.6038
+continuous,cox model,6.6005
+sampling,random variable,6.5979
+hypothesis,random variable,6.5975
+distribution,quadratic,6.5953
+marginal,response,6.5932
+independent,hypothesis,6.5815
+mcmc,boundary,6.5683
+martingale,gaussian,6.5671
+least excessive majorant,local martingale,6.5647
+probability,mean,6.5583
+predictor,logistic model,6.5284
+correlation,sample,6.5272
+cluster,predictor,6.5264
+characteristic function,continuous function,6.5259
+random variables,least excessive majorant,6.5214
+glm,p-value,6.5174
+exponential,log likelihood,6.5149
+stochastic integral,stochastic process,6.5106
+conditional,exponential family,6.5089
+distributions,continuous function,6.5038
+approximation,likelihood,6.5026
+cox model,random variable,6.4938
+cox model,cox model,6.4822
+mse,random variable,6.4776
+logit,logistic model,6.4708
+matrix,random sample,6.4706
+independent,properties,6.4674
+poisson,marginal,6.4635
+martingale,submartingale,6.4512
+mcmc,brownian motion,6.4499
+conditional,logistic regression,6.4495
+random variable,least excessive majorant,6.4489
+cox model,expected,6.4406
+dirichlet,markov process,6.4377
+characteristic function,predictable,6.4324
+continuous,maximum a posteriori probability,6.4311
+boundary,stochastic integral,6.4259
+distribution,average,6.4219
+median,maximum likelihood estimator,6.4216
+contrast,predictor,6.4203
+gradient,expected value,6.4201
+continuous,parameter,6.4167
+integral,convergence,6.4166
+continuous,properties,6.4136
+hypothesis,joint,6.4103
+variance,least excessive majorant,6.4035
+equations,markov process,6.3995
+markov process,quadratic,6.3985
+logistic regression,binomial,6.3939
+martingale problem,least excessive majorant,6.387
+independent,h¨older continuous,6.3818
+p-value,conditional,6.381
+probability,additive functional,6.3769
+markov chain,poisson process,6.3632
+infinitesimal generator,markov process,6.361
+variance,reduction,6.3593
+correlation,variable selection,6.3543
+information,nonlinear,6.3473
+parameter,probability mass function,6.3466
+marginal,glm,6.3457
+simulation,normal,6.342
+expectation,markov process,6.3399
+response,binomial,6.337
+normal,exponential,6.3365
+optimization,mean,6.3363
+estimation,random sample,6.3278
+average,random variable,6.3274
+logit,marginal,6.3239
+martingale problem,product,6.3231
+bias,joint,6.3217
+weak uniqueness,continuous function,6.3205
+gradient,probability mass function,6.3185
+brownian motion,expectation,6.306
+semigroup,strong markov property,6.2992
+optimization,domain,6.2981
+envelope,confidence interval,6.297
+distribution,interpretation,6.2888
+strong markov property,predictable,6.2868
+sampling,uniform,6.2859
+independent,martingale,6.2848
+stochastic integral,mean,6.2807
+gibbs sampler,mcmc,6.277
+parameter,boundary,6.2766
+conditional,linear model,6.2717
+brownian motion,martingale,6.2659
+probability,random sample,6.2651
+random sample,normal,6.2616
+kernel,markov process,6.2577
+semigroup,weak uniqueness,6.2569
+boundary,random variable,6.2566
+optimization,newton step,6.2524
+bounded,parameter,6.2509
+linear regression,independent,6.2485
+nonlinear,normal,6.2466
+interaction,logistic model,6.2405
+mean,nonlinear,6.2395
+dual,constraint,6.2392
+manifold,descent,6.2328
+filtration,filtration,6.225
+markov chain,random sample,6.2209
+error,derivative,6.2148
+average,descent,6.2124
+maximum likelihood estimator,censored data,6.2111
+boundary,continuous,6.209
+error,quadratic,6.2058
+continuous,predictor,6.1938
+logistic model,covariance matrix,6.1933
+predictable,h¨older continuous,6.1923
+approximation,h¨older continuous,6.1909
+discrete,brownian motion,6.1875
+variable,expected value,6.1824
+mean field,simulating,6.1816
+predictor,events,6.1797
+spline,random variable,6.1781
+power,probability,6.177
+response,logit,6.1765
+matrix,exponential,6.1726
+deep learning,random variable,6.1699
+assumption,expected,6.1665
+odds,odds,6.1622
+logistic model,aic,6.1621
+poisson point process,filtration,6.1547
+probability,backtracking,6.1495
+mean,interpretation,6.1492
+inference,random variable,6.133
+distribution,least excessive majorant,6.126
+mean,bias,6.1257
+optimization,cumulants,6.1221
+shrinkage,joint,6.1186
+martingale problem,distribution,6.1157
+univariate,markov property,6.1157
+linear regression,gradient,6.1139
+normal,unbiased,6.1136
+cox model,matrix,6.1116
+parameter,trial,6.11
+logistic model,trial,6.1076
+stochastic integral,gaussian,6.1076
+bounded,multidimensional,6.1054
+continuous,hypergeometric,6.1037
+gaussian,bounded,6.1023
+matrix,expected,6.0945
+univariate,random sample,6.0879
+joint,likelihood,6.0855
+mean,random sample,6.0841
+variance,gee,6.0822
+convergence,markov property,6.0818
+mean,estimation,6.0806
+bayesian,maximum likelihood,6.08
+gamma,independent,6.0791
+negative binomial,response,6.0756
+probability,markov property,6.0652
+nonlinear,joint,6.0608
+probability,domain,6.0596
+least excessive majorant,continuous,6.0584
+increasing process,brownian motion,6.058
+nonlinear,variance,6.0565
+poisson,probability mass function,6.0544
+predictable,parameter,6.0486
+weak uniqueness,bounded,6.0485
+convergence,boundary,6.0475
+derivative,markov process,6.04
+poisson,random variable,6.0399
+sample,stationary,6.0384
+probability,hessian,6.0273
+independent,submartingale,6.0205
+filtration,conditional,6.0163
+random variable,markov property,6.0147
+probability,distribution function,6.0142
+simulation,integral,6.0134
+events,joint,6.0112
+characteristic function,bounded,6.0081
+stochastic process,probability,6.0026
+logit,loglinear models,5.9989
+fitting,random variable,5.9972
+mcmc,continuous,5.9941
+inference,descent,5.9918
+l´evy process,borel,5.9902
+optimization,bayesian,5.9808
+distributions,invariant,5.9795
+weight,random variable,5.9787
+domain,domain,5.974
+strong markov process,stopping time,5.9727
+filtration,properties,5.9688
+response,quantile,5.9664
+distribution,maximum likelihood,5.9609
+martingale,cantor,5.9576
+integral,nonlinear,5.957
+independent,unbiased,5.9512
+variance,exponential family,5.9496
+aic,optimization,5.9484
+chains,conditional,5.9471
+regularization,random variable,5.9444
+gee,quasi-symmetry,5.9429
+norm,variable,5.9409
+neighborhood,convergence,5.9404
+convergence,joint,5.9364
+information,probability,5.9283
+value function,parameter,5.9261
+sample,mcmc,5.9228
+itˆo’s formula,continuous-time,5.9225
+value function,stochastic process,5.9216
+hyperparameter,probability,5.9172
+probability,interpretation,5.9162
+mcmc,least excessive majorant,5.9155
+random variable,bayesian,5.913
+envelope,normal,5.9109
+linear regression,random variable,5.9065
+domain,itˆo’s formula,5.9043
+distribution,gradient method,5.902
+univariate,stationary,5.9018
+likelihood,distribution,5.9012
+cauchy problem,continuous function,5.8972
+almost surely,brownian motion,5.8926
+logit,independence,5.8888
+approximate,normal,5.8822
+linear regression,hessian,5.8809
+boundary,local martingale,5.8757
+covariance matrix,random variable,5.8736
+gee,symmetry,5.8731
+binary,expected value,5.8618
+characteristic function,cantor,5.8584
+l´evy process,least excessive majorant,5.8579
+logistic model,probability mass function,5.8573
+poisson,hypergeometric,5.8504
+cluster,binary,5.8492
+quantile,binary,5.8461
+unbiased,normal,5.8418
+logistic model,hypothesis,5.8413
+sparse,predictor,5.8376
+poisson,h¨older continuous,5.8365
+exponential,exponential,5.8342
+asymptotic,variance,5.834
+variable selection,independent,5.8326
+mixture models,marginal,5.827
+correlation,transformations,5.827
+predictable,stochastic process,5.8251
+gibbs sampler,stationary,5.825
+sample,odds,5.8242
+parameter,gamma,5.8221
+maximum likelihood,normal,5.8221
+pooling,random variable,5.8208
+hypothesis,distribution,5.8205
+continuous,markov property,5.8106
+predictable,properties,5.802
+fuzzy q-iteration,descent,5.8005
+information,random variable,5.7977
+markov process,embedding,5.7965
+mean,properties,5.7923
+independence,odds ratio,5.7908
+submartingale,random variable,5.784
+semigroup,poisson,5.7717
+independence,variable,5.7715
+distribution,condition number,5.7705
+borel,continuous martingale,5.7685
+stopping time,gaussian,5.7652
+distribution,binomial,5.7643
+cox model,estimation,5.7634
+sample,backtracking,5.7612
+neighborhood,sample,5.7592
+sample,trials,5.7591
+brownian motion,conditional,5.7566
+local martingale,h¨older continuous,5.7548
+discrimination,spline,5.7526
+convergence,optimization,5.7516
+normal,distribution function,5.7489
+bounded,hitting time,5.7483
+itˆo’s formula,stochastic process,5.7471
+bias,normal,5.747
+confidence interval,sample,5.7469
+poisson,stochastic process,5.7438
+sampling,newton,5.7416
+calibration,cox model,5.7353
+cauchy,mean,5.7314
+error,probability mass function,5.7313
+itˆo’s formula,events,5.7294
+asymptotic,central limit theorem,5.727
+donsker invariance principle,markov process,5.7213
+estimator,independent,5.721
+value function,submartingale,5.7194
+mean field,random variable,5.7182
+l´evy process,distribution,5.7175
+local martingale,brownian motion,5.7175
+conditional,unbiased,5.7142
+markov process,martingale,5.7119
+glm,binomial,5.7028
+mean,markov process,5.7012
+binomial,multinomial,5.699
+predictor,binary,5.6948
+response,parameter,5.6948
+markov property,local martingale,5.6947
+domain,boundary,5.6937
+statistic,mean,5.6931
+norm,markov process,5.6906
+stochastic integral,parameter,5.686
+expected,joint,5.6856
+logistic model,logistic regression,5.6854
+correlation,reduction,5.6838
+increasing process,h¨older continuous,5.6793
+chains,stationary,5.6778
+statistic,binomial,5.6768
+interaction,expected,5.6745
+cluster,variable,5.6721
+supremum,markov process,5.6716
+newton,descent,5.669
+gibbs sampler,borel,5.6667
+variable,domain,5.6662
+central limit theorem,probability,5.6644
+normal,expected value,5.6638
+maximum a posteriori probability,random variable,5.6637
+invariance,markov process,5.6604
+infinitesimal generator,continuous function,5.6572
+natural scale,variable,5.6549
+interaction,binary,5.6528
+gradient,gradient method,5.6507
+mcmc,effective sample size,5.6502
+interaction,maximum likelihood estimator,5.649
+continuous function,itˆo’s formula,5.6482
+importance sampling,confidence interval,5.6478
+martingale,h¨older continuous,5.6449
+distributions,state space,5.6428
+continuous-time,probability,5.6427
+normal,trial,5.6419
+approximation,log likelihood,5.6391
+events,independent,5.6386
+spline,variance,5.6377
+stochastic process,joint,5.6373
+conditional,probability,5.6334
+martingale,filtration,5.6231
+discrete,h¨older continuous,5.6169
+error,expected value,5.6145
+gamma,probability,5.6141
+conditional,residual,5.6086
+mcmc,stationary distribution,5.6029
+binary,maximum likelihood estimator,5.6021
+distribution,simulating,5.5889
+inference,joint,5.5847
+optimization,univariate,5.582
+discrete,poisson process,5.5688
+cox model,predictor,5.5627
+semigroup,multidimensional,5.5622
+random sample,random sample,5.559
+semigroup,hitting time,5.5583
+unbiased,independent,5.5578
+sampling,stationary,5.5527
+chains,gibbs sampler,5.5518
+martingale problem,weak uniqueness,5.5492
+brownian motion,square integrable martingale,5.5485
+variable,quadratic,5.5479
+optimization,exponential,5.5454
+reinforcement learning,filtration,5.5391
+anova,predictor,5.5381
+matrix,descent,5.5349
+bayesian,boundary,5.5348
+response,response,5.5323
+statistics,joint,5.5298
+gradient,norm,5.528
+mean,null hypothesis,5.5273
+events,probability,5.5272
+multinomial,probability,5.5244
+univariate,boundary,5.5227
+weighted least squares,random variable,5.5213
+brownian bridge,borel,5.5185
+mean,markov property,5.518
+variance,variable,5.5161
+poisson,poisson,5.5146
+power,logistic model,5.5126
+error,random variables,5.5109
+predictable,brownian motion,5.5097
+response,marginal,5.5038
+natural scale,information,5.5027
+mcmc,gibbs sampler,5.5003
+sample,newton,5.4959
+continuous,cluster,5.4946
+l´evy process,integral,5.4937
+variable,power,5.4922
+fitting,marginal,5.4914
+log likelihood,gamma,5.4867
+proposal distribution,mcmc,5.4865
+weak convergence,central limit theorem,5.4844
+variance,power,5.4801
+convergence,exponential,5.4766
+normal,binomial,5.472
+variable,descent,5.4662
+conditional,trial,5.4637
+logit,likelihood-ratio,5.4607
+cox model,factor,5.4602
+independent,continuous function,5.4597
+parameter,expected,5.4594
+borel,minimal augmented filtration,5.4567
+generalized linear,pearson,5.4473
+integral,optimization,5.4466
+continuous function,stochastic integral,5.4461
+poisson,pearson,5.4443
+predictor,expected value,5.442
+estimation,likelihood,5.4373
+variance,critical region,5.4327
+simulated annealing,convergence,5.4305
+exponential,random sample,5.4247
+response,expected value,5.4176
+p-value,odds ratio,5.4141
+square integrable martingale,random variables,5.4052
+conditional,gee,5.4035
+markov chain,markov property,5.4014
+variable,expected,5.3988
+stationary distribution,markov process,5.3986
+assumption,maximum likelihood estimator,5.3981
+candidate solution,convergence,5.3894
+invariant,stopping time,5.3887
+univariate,poisson process,5.3864
+independent,random sample,5.3838
+marginal,trials,5.377
+distribution,expected value,5.3752
+weak convergence,borel,5.3746
+distribution,state space,5.374
+convergence,average,5.3725
+median,logistic model,5.3697
+probability,hypergeometric,5.3684
+optimization,approximate,5.3665
+square integrable martingale,filtration,5.3661
+variable,mcmc,5.3632
+brownian motion,joint,5.3583
+independent,filtration,5.3565
+profile likelihood,markov process,5.3562
+correlation,bias,5.3514
+bounded,hypergeometric,5.3499
+uniform,random variable,5.3494
+stopping time,minimal augmented filtration,5.3426
+exponential,censored data,5.3426
+weak convergence,mean,5.3412
+approximation,properties,5.3398
+estimator,hessian,5.338
+response,statistic,5.3367
+independent,parameter,5.3356
+normal,stationary,5.3334
+chi-squared,odds ratio,5.3313
+distribution,newton,5.3232
+mean,rss,5.3217
+multinomial,binomial,5.321
+confidence interval,variance,5.3187
+distribution,log likelihood,5.3129
+borel,fourier transform,5.3107
+glm,chi-squared,5.3068
+distribution,marginal,5.3011
+continuous,random variables,5.2983
+weak uniqueness,predictable,5.2976
+marginal,probability mass function,5.296
+mean,matrix,5.2944
+cox model,accelerated failure time model,5.2935
+maximum a posteriori probability,probability,5.2911
+mean,cluster,5.2903
+approximation,variance,5.2895
+binomial,chi-squared,5.2884
+additive functional,itˆo’s formula,5.2884
+variance,rss,5.2851
+gamma,joint,5.2824
+boltzmann machine,simulating,5.281
+convergence,nonlinear,5.28
+domain,information,5.2795
+variable selection,joint,5.276
+univariate,bounded,5.2758
+gaussian,borel,5.273
+variable,trial,5.273
+joint,normal,5.2658
+hypothesis,random sample,5.2625
+maximum likelihood estimator,normal,5.2558
+continuous,continuous-time,5.2548
+policy,policy evaluation,5.2529
+response,transformation,5.2523
+expectation,joint,5.2463
+reconstruction,random variable,5.2462
+distribution,strong markov property,5.245
+variable,interaction,5.2398
+probability,newton,5.2396
+semigroup,strong markov process,5.2387
+random variables,markov property,5.2357
+l´evy process,strong markov process,5.231
+optimization,boundary,5.2282
+characteristic function,product,5.2241
+gradient,backtracking line search,5.2228
+factor,events,5.222
+gaussian,descent,5.2208
+cox model,cumulative,5.2187
+increasing process,random variables,5.2186
+integral,variance,5.217
+martingale problem,strong markov property,5.2168
+integral,log likelihood,5.2156
+variance,transformations,5.2151
+local martingale,submartingale,5.215
+logistic regression,expected,5.2113
+binomial,gee,5.2095
+convergence,poisson process,5.2029
+continuous,joint,5.1959
+variable,splines,5.1953
+semigroup,almost surely,5.191
+martingale,continuous function,5.1898
+estimator,integral,5.1872
+probit,logistic model,5.1861
+interaction,events,5.1839
+binary,gee,5.1837
+value function,normal,5.1833
+exponential,joint,5.182
+continuous,approximate,5.181
+approximation,normal,5.1788
+properties,independent,5.1785
+posterior density,normal,5.1782
+markov property,stochastic integral,5.1761
+normal,exponential family,5.1758
+manifold,gradient,5.1721
+variable,probability,5.1715
+independent,unbiased estimator,5.17
+probit,random variable,5.1674
+closure,central limit theorem,5.1671
+error,points,5.1655
+distribution,dirichlet problem,5.1642
+sparse coding,random variable,5.1636
+logistic model,moment generating function,5.1636
+quasi-newton,optimization,5.1621
+probability,poisson,5.1568
+response,kernel,5.1566
+domain,interior,5.1546
+brownian motion,integral,5.1527
+linear regression,probability,5.1499
+logistic regression,generalized linear,5.1485
+assumption,logistic model,5.1485
+optimization,hessian,5.1477
+normal,expected,5.1425
+gradient,binomial,5.1425
+poisson,fisher’s exact test,5.1399
+predictable,random variables,5.1397
+response,sum of squares,5.1381
+gibbs sampling,simulating,5.1379
+semigroup,additive functional,5.1335
+independence,conditional,5.1333
+sample,simpson’s rule,5.127
+glmm,response,5.1241
+distribution,newton’s method,5.1236
+itˆo’s formula,variance,5.1228
+predictor,probability mass function,5.114
+domain,continuous function,5.107
+borel,increasing process,5.1049
+gibbs sampler,continuous,5.0996
+error,trial,5.0986
+itˆo’s formula,convergence,5.0967
+multivariate,likelihood,5.096
+stepwise,independent,5.0898
+sampling,backtracking,5.0879
+distribution,trial,5.0865
+interaction,matrix,5.0834
+random effects,estimating equations,5.0802
+maximum likelihood,variance,5.0794
+deep learning,newton,5.0792
+bounded,completeness,5.0783
+learning rate,probability,5.0777
+logistic model,generalized linear,5.0753
+distribution,additive functional,5.0739
+random variables,joint,5.0735
+variance,exponential,5.0728
+manifold,hessian,5.0716
+i.i.d.,mean,5.0713
+newton step,descent,5.0701
+joint,probability,5.0697
+additive functional,stochastic integral,5.0689
+probability,dirichlet problem,5.0637
+quantile,maximum likelihood estimator,5.0616
+aic,shrinkage,5.0539
+logistic regression,statistic,5.0515
+norm,expected,5.0496
+p-value,random variables,5.0486
+poisson,submartingale,5.0467
+mse,independent,5.0462
+sample,polynomial,5.043
+convolution,descent,5.0422
+neighborhood,random sample,5.0416
+software,markov process,5.038
+poisson process,independent,5.0372
+variable,linear regression,5.0355
+markov process,skorokhod embedding,5.0329
+odds,expected,5.0322
+predictor,expected,5.0311
+logistic model,sample,5.0309
+independent,bias,5.0292
+brownian motion,stopping time,5.0273
+fisher’s exact test,odds,5.0263
+covariance,central limit theorem,5.0247
+submartingale,independent,5.0236
+value function,poisson process,5.0229
+sample,poisson,5.0221
+mcmc,markov chain,5.0211
+martingale,events,5.0171
+independent,stochastic process,5.016
+nonlinear,likelihood,5.0138
+mean,hessian,5.0131
+policy,q-iteration,5.0113
+natural scale,bounded,5.01
+parameter,generalized linear,5.0095
+joint,random variable,5.0092
+brownian motion,local martingale,5.0091
+random effects,multivariate,5.0088
+weak uniqueness,information,5.0086
+additive functional,probability,5.0055
+log likelihood,exponential family,5.0049
+uniform,probability,5.0037
+i.i.d.,markov process,5.0036
+information,random sample,5.0031
+accelerated failure time model,censored data,5.0025
+maximum likelihood,likelihood,4.9994
+correlation,shrinkage,4.9973
+aic,variable selection,4.995
+normal,unbiased estimator,4.9931
+parameter,exponential,4.991
+characteristic function,information,4.9852
+information,trials,4.9844
+dirichlet,continuous function,4.9823
+continuous,bayesian,4.9812
+marginal,residual,4.9791
+random variables,mean,4.9777
+variable,nonlinear,4.9766
+pooling,simulating,4.9746
+sampling,quadratic,4.9706
+marginal,logit,4.9694
+policy,convergence,4.9692
+maximum likelihood estimator,joint,4.9691
+marginal,likelihood equations,4.9655
+l´evy process,variable,4.965
+distribution,mcmc,4.965
+weibull,events,4.9628
+exponential family,likelihood,4.962
+additive functional,local martingale,4.9618
+response,unbiased,4.9615
+convergence,least excessive majorant,4.9593
+approximate,backtracking,4.9592
+domain,predictable,4.9584
+fitting,expected,4.9571
+cross-validation,spline,4.9565
+gradient,trials,4.9522
+pearson,odds ratio,4.952
+brownian motion,probability,4.9503
+bayesian,exponential family,4.9475
+random effects,matrix,4.9427
+independent,exponential family,4.9382
+information,log likelihood,4.9375
+distribution,bayesian,4.936
+markov property,itˆo’s formula,4.935
+variance,binomial,4.9346
+quasi-newton,convergence,4.9312
+weight,descent,4.9295
+mcmc,events,4.9289
+bounded,minimal augmented filtration,4.9288
+mean,cumulative distribution,4.9276
+probability,bernoulli,4.9269
+correlation,expected,4.9266
+deep learning,quadratic,4.9246
+martingale,maximum a posteriori probability,4.9231
+log-logistic distribution,events,4.9213
+calibration,binary,4.9187
+regularization,newton method,4.9187
+h¨older continuous,joint,4.9152
+continuous,log likelihood,4.9146
+candidate solution,sample,4.9141
+random variable,submartingale,4.9116
+probability,geometric,4.908
+cauchy,least excessive majorant,4.9062
+gradient,condition number,4.9061
+logistic model,factor,4.9059
+brownian motion,gaussian,4.9045
+norm,cantor,4.9002
+p-value,probability,4.8956
+importance sampling,normal,4.8954
+weak solution,markov process,4.8951
+independent,continuous-time,4.8949
+quantile regression,logistic model,4.8948
+poisson,response,4.8946
+increasing process,properties,4.8915
+cauchy problem,predictable,4.8849
+variance,strong markov property,4.8834
+deviance,p-value,4.8812
+stochastic integral,continuous-time,4.8804
+cox model,nonparametric,4.8802
+infinitesimal generator,martingale,4.8788
+continuous function,random variable,4.8769
+integral,likelihood,4.8732
+markov chain,boundary,4.8731
+bounded,utility,4.8728
+log odds,poisson,4.8715
+sample,trial,4.8715
+mcmc,estimator,4.8687
+poisson,expected,4.8684
+odds,likelihood-ratio,4.8633
+bayesian,gamma,4.8633
+cauchy problem,borel,4.8628
+points,curve fitting,4.862
+points,curve fitting,4.862
+hessian,dual,4.8581
+predictor,censored data,4.8558
+log likelihood,hypothesis,4.8546
+borel,semimartingales,4.8545
+markov process,cardinality,4.8521
+marginal,joint,4.8521
+probability,state space,4.8507
+sample,geometric,4.8506
+conditional,unbiased estimator,4.8492
+odds,glm,4.8488
+stationary,joint,4.8472
+weibull,maximum likelihood estimator,4.8469
+bounded,itˆo’s formula,4.8465
+points,markov process,4.8443
+value function,continuous,4.844
+state space,mcmc,4.8374
+residual,joint,4.8366
+continuous,integral,4.8352
+stochastic integral,borel,4.8341
+variance,variable selection,4.8304
+gibbs sampler,points,4.8288
+policy,h¨older continuous,4.8266
+stopping time,poisson process,4.8258
+logistic model,trials,4.824
+state space,martingale,4.8221
+odds,multinomial,4.8206
+quadratic,dual,4.8192
+residual,residual,4.8186
+probability,quadratic,4.8184
+brownian motion,minimal augmented filtration,4.8182
+maximum likelihood,hypothesis,4.8156
+approximation,nonlinear,4.8151
+convergence,approximate,4.8142
+nonlinear,linear regression,4.8141
+normal,gamma,4.8132
+distribution,geometric,4.8131
+weak uniqueness,cantor,4.8118
+binary,probability mass function,4.8105
+closure,mean,4.8095
+conditional,stationary,4.8087
+optimization,moment-generating function,4.807
+approximation,submartingale,4.8069
+bounded,doob’s inequalities,4.8058
+logistic model,likelihood,4.8031
+continuous,poisson,4.8023
+optimization,statistics,4.8022
+variance,descent,4.8022
+independent,stationary,4.8011
+predictable,gaussian,4.7995
+cox model,covariance matrix,4.7904
+joint,log likelihood,4.7874
+gaussian,boundary,4.7769
+discrete,stochastic process,4.7767
+binary,binary,4.7762
+random variable,parameter,4.7726
+independent,sum of squares,4.772
+filtration,continuous-time,4.7711
+univariate,maximum likelihood,4.7711
+bayesian,independent,4.7702
+brownian motion,conditional probability,4.7675
+response,estimation,4.7675
+local martingale,random variables,4.7665
+backtracking,dual,4.7663
+statistics,expected,4.7656
+characteristic function,borel,4.7656
+information,probability mass function,4.7622
+simulated annealing,sample,4.7618
+random variables,strong markov property,4.7618
+generalized linear,statistic,4.7604
+least excessive majorant,square integrable martingale,4.7588
+predictable,continuous-time,4.7561
+binary,trial,4.7541
+censored data,continuous,4.7531
+gaussian,approximate,4.7519
+stochastic integral,convergence,4.7516
+univariate,bayesian,4.7506
+aic,average,4.7501
+gibbs sampler,poisson process,4.7443
+aic,random sample,4.7423
+least excessive majorant,norm,4.7388
+correlation,probability,4.7384
+optimization,quadratic,4.7369
+residual,unbiased,4.7337
+parameter,variance,4.7326
+independent,poisson,4.7295
+itˆo’s formula,expectation,4.7268
+variable,convergence,4.726
+integral,multivariate,4.7234
+contrast,missing data,4.7217
+variance,maximum likelihood,4.7216
+expected,independent,4.7212
+poisson’s equation,continuous function,4.7178
+probability distribution,descent,4.7175
+node,curve fitting,4.7165
+node,curve fitting,4.7165
+optimization,vertices,4.7152
+binomial,marginal,4.7149
+filtration,conditional probability,4.7109
+predictable,normal,4.7093
+independent,distribution function,4.709
+bounded,laplace transform,4.7085
+deviance,variance,4.7046
+factor,expected value,4.7042
+l´evy process,weak uniqueness,4.7035
+quasi-likelihood,gee,4.7019
+value function,gaussian,4.6981
+independent,least excessive majorant,4.696
+parameter,markov property,4.6946
+variance,likelihood ratio statistic,4.694
+martingale problem,integral,4.693
+independent,deviance,4.6924
+statistics,logistic model,4.6923
+binomial,inference,4.692
+generalized linear,independence,4.6896
+random variables,central limit theorem,4.6883
+reconstruction,descent,4.6876
+mean,critical region,4.686
+markov process,semimartingale,4.6825
+sampling,distributions,4.682
+interaction,log likelihood,4.681
+weak uniqueness,borel,4.6792
+univariate,continuous,4.6789
+multivariate,marginal,4.677
+bounded,norm,4.6759
+odds ratio,generalized linear,4.6758
+chi-squared,conditional,4.6756
+sample,splines,4.6743
+parameter,newton’s method,4.6726
+submartingale,joint,4.6716
+l´evy process,additive functional,4.6702
+distributions,random sample,4.6697
+normal,interpretation,4.6687
+gibbs sampler,sample,4.6685
+martingale,expected value,4.6675
+natural scale,distribution,4.6668
+quantile,cluster,4.6658
+unbiased,random sample,4.6632
+convergence,order statistics,4.6621
+response,bias,4.6617
+mcmc,additive functional,4.6582
+approximation,stochastic process,4.6572
+error,condition number,4.6565
+poisson,odds,4.6559
+dirichlet,brownian motion,4.6558
+mean,linear model,4.6554
+gibbs sampler,markov property,4.6542
+transformation,quantile,4.6492
+power,logistic regression,4.6488
+independent,maximum a posteriori probability,4.6485
+semigroup,joint,4.6461
+binary,convergence,4.6454
+conditional,markov process,4.6433
+l´evy process,strong markov property,4.6408
+least excessive majorant,conditional,4.6368
+sample,software,4.6358
+information,newton’s method,4.6337
+bayesian,markov property,4.6334
+itˆo’s formula,parameter,4.6324
+bayesian,sum of squares,4.6313
+continuous,maximum likelihood estimator,4.6308
+estimator,gradient,4.6292
+random variable,normal,4.629
+h¨older continuous,independent,4.6283
+pearson,probability,4.6251
+random walk,markov process,4.6209
+matrix,joint,4.6208
+mean,quadratic,4.6196
+sampling,gibbs sampler,4.6181
+poisson,normal,4.6178
+estimation,random variable,4.6154
+logistic model,test statistic,4.6147
+statistics,odds,4.6145
+random variable,expected,4.6144
+median,mean,4.6139
+convergence,vertices,4.6115
+logit,link function,4.6085
+mcmc,chains,4.6067
+weighted least squares,expected,4.6055
+random effects,link function,4.6053
+mean,design matrix,4.6028
+cauchy problem,product,4.6024
+markov property,conditional,4.6023
+optimization,markov property,4.6018
+semigroup,error,4.6006
+predictable,convergence,4.6
+nonlinear,residual,4.599
+continuous process,brownian motion,4.596
+candidate solution,optimization,4.5958
+independent,exponential,4.595
+assumption,log likelihood,4.5932
+span,kernel,4.592
+glm,inference,4.5906
+binary,sample,4.5887
+matrix,continuous function,4.5854
+estimator,variance,4.5833
+univariate,log likelihood,4.5779
+censored data,censored data,4.5776
+random sample,independent,4.5764
+weibull,weibull,4.5759
+variable,binomial,4.5755
+chains,convergence,4.5753
+posterior density,joint,4.5743
+correlation,conditional,4.5733
+markov chain,convergence,4.5731
+additive functional,continuous,4.5718
+median,aic,4.5702
+logistic model,contrast,4.5695
+neighborhood,average,4.5646
+sample,gradient method,4.5641
+optimization,optimization,4.5638
+distribution,gibbs sampler,4.5633
+glmm,correlation,4.5631
+integral,random sample,4.5629
+sample size,random variable,4.5627
+distributions,bayesian,4.5588
+variance,state space,4.5578
+univariate,least excessive majorant,4.5572
+binomial,odds,4.5539
+probability,discrete,4.553
+l´evy process,invariant,4.5519
+logistic model,covariance,4.5517
+strong markov process,itˆo’s formula,4.5515
+parameter,descent,4.5453
+multivariate,random sample,4.5417
+response,logistic regression,4.5409
+random effects,equations,4.5396
+stochastic integral,normal,4.539
+independent,interpretation,4.5389
+aic,multivariate,4.5361
+degrees of freedom,independent,4.536
+matrix,least excessive majorant,4.5346
+error,softmax,4.5341
+covariance matrix,expected,4.5337
+central limit theorem,markov process,4.5312
+variance,order statistics,4.5303
+stopping time,random variable,4.5291
+semigroup,exponential,4.5234
+semigroup,completeness,4.5211
+matrix,expected value,4.5196
+logit,covariance matrix,4.5178
+maximum likelihood estimator,bayesian,4.5175
+binomial,expected,4.5155
+local martingale,properties,4.513
+interpretation,likelihood,4.5107
+information,convergence,4.5101
+martingale problem,strong markov process,4.51
+distribution,backtracking line search,4.5091
+mixture models,gee,4.5088
+tight,central limit theorem,4.5072
+q-iteration,value function,4.506
+independent,nonlinear,4.5034
+binomial,probability,4.5022
+loglinear models,poisson,4.501
+matrix,probability mass function,4.5009
+mcmc,convergence,4.5001
+continuous,bernoulli,4.4993
+neighborhood,mean,4.4989
+matrix,trials,4.4988
+parameter,hessian,4.4984
+cluster,cluster,4.4942
+least excessive majorant,increasing process,4.4903
+probability,strong markov process,4.4871
+response,trial,4.4855
+quasi-newton,likelihood,4.4854
+domain,intersection,4.4842
+martingale,martingale,4.4841
+continuous,laplace transform,4.4827
+polynomial,independent,4.482
+response,median,4.4812
+cauchy problem,martingale,4.481
+value function,properties,4.4807
+poisson,sample,4.4788
+marginal,symmetry,4.478
+inference,binomial,4.4772
+glm,multinomial,4.4756
+parameter,expected value,4.4727
+inference,independent,4.4683
+variance,hypergeometric,4.4657
+weak uniqueness,variable,4.4653
+cox model,contrast,4.4648
+variance,additive functional,4.462
+equations,martingale,4.4605
+conditional,link function,4.4543
+encoder,random variable,4.4527
+mcmc,state space,4.4525
+logistic model,null hypothesis,4.4514
+parameter,conditional,4.4507
+kernel,descent,4.4502
+least excessive majorant,null set,4.4491
+sum of squares,hypothesis,4.4489
+normal,conditional probability,4.4485
+bayesian,interpretation,4.4481
+bias,random variable,4.4479
+variance,dirichlet problem,4.4474
+borel,integral,4.4474
+hypothesis,exponential,4.4471
+spline,independent,4.447
+marginal,quasi-symmetry,4.4454
+statistic,continuous,4.4448
+logit,distribution function,4.4446
+increasing process,submartingale,4.4423
+normal,residual,4.4416
+markov process,assumption,4.4398
+newton,domain,4.4392
+cox model,aic,4.4392
+estimator,descent,4.4362
+mcmc,simulating,4.4342
+power,logit,4.4339
+variable,fitting,4.4336
+proposal distribution,markov process,4.4332
+response,unbiased estimator,4.4324
+continuous,martingale,4.4321
+martingale,properties,4.4317
+probability,average,4.4314
+optimization,newton,4.4284
+average,quadratic,4.4283
+local search,convergence,4.4282
+i.i.d.,convergence,4.426
+almost surely,continuous,4.425
+poisson point process,continuous,4.425
+interaction,cluster,4.4222
+chains,points,4.4221
+regularization,newton’s method,4.4199
+boundary,conditional,4.4186
+filtration,stochastic process,4.4181
+linear regression,expected,4.4173
+predictor,curve fitting,4.4143
+predictor,curve fitting,4.4143
+state space,conditional,4.4127
+distribution,cumulant-generating function,4.4112
+crossover,convergence,4.4069
+stochastic process,independent,4.4023
+semigroup,integral,4.4022
+quantile,log likelihood,4.3997
+semigroup,utility,4.3987
+variance,gamma,4.3968
+convergence,cumulant-generating function,4.3963
+response,trials,4.3952
+dirichlet problem,probability,4.3943
+random variables,borel,4.3938
+reinforcement learning,brownian motion,4.3936
+optimization,skewness,4.3923
+stopping time,continuous-time,4.3922
+brownian motion,hypergeometric,4.3881
+mean,likelihood ratio statistic,4.387
+maximum likelihood estimator,average,4.3864
+markov process,quadratic variation,4.3845
+aic,newton’s method,4.3816
+unbiased,joint,4.3807
+domain,separating hyperplane,4.3802
+parameter,exponential family,4.3786
+random sample,likelihood,4.3785
+hazard function,mean,4.3785
+poisson,likelihood-ratio,4.3768
+hazard ratio,events,4.3768
+markov chain,normal,4.3757
+logistic model,interaction,4.3739
+neural network,descent,4.3712
+estimator,trials,4.3708
+factor,quadratic,4.3671
+univariate,strong markov process,4.367
+mcmc,bounded,4.3659
+sampling,poisson,4.365
+logit,fitted values,4.3647
+correlation,residual,4.363
+variance,average,4.3613
+stochastic integral,poisson process,4.3611
+regularization,descent,4.3608
+markov chains,markov process,4.3591
+objective function,random sample,4.3524
+filtration,expectation,4.3524
+predictor,assumption,4.3523
+chains,chains,4.352
+additive functional,random variable,4.3516
+bounded,recall,4.3503
+brownian motion,poisson,4.3499
+predictor,nonparametric,4.3453
+gibbs sampler,brownian motion,4.3443
+product formula,brownian motion,4.3428
+strong markov property,markov process,4.3393
+domain,nonnegative,4.3384
+linear regression,second derivative,4.3365
+gaussian,domain,4.3365
+regularization,kkt,4.3359
+bayesian,nonlinear,4.3341
+optimization,properties,4.3335
+newton,dual,4.3327
+martingale,trial,4.3314
+binary,mcmc,4.3312
+i.i.d.,mcmc,4.3304
+expectation,distribution,4.3291
+likelihood ratio statistic,probability,4.3275
+marginal,probability,4.3259
+continuous martingale,brownian motion,4.3228
+information,trial,4.3209
+discrete,random sample,4.3209
+mean,least excessive majorant,4.3175
+nonlinear,hypothesis,4.3174
+hypothesis,simulating,4.3153
+taylor’s theorem,markov process,4.3147
+square integrable martingale,normal,4.3144
+gaussian,least excessive majorant,4.3144
+brownian bridge,central limit theorem,4.3141
+distribution,order statistics,4.3138
+variance,estimation,4.3127
+continuous,geometric,4.3112
+estimator,expected value,4.3111
+markov process,integral,4.3101
+distributions,dirichlet problem,4.3084
+martingale,probability mass function,4.3045
+convolution,random variable,4.3036
+continuous function,local martingale,4.3035
+weight,expected,4.3031
+posterior density,markov process,4.3029
+cross-entropy,filtration,4.3013
+parameter,deviance,4.2956
+independent,hypergeometric,4.2952
+error,binomial,4.2903
+gradient,trial,4.2902
+reduction,variable,4.2899
+odds ratio,expected,4.2874
+confidence interval,joint,4.2868
+martingale,continuous-time,4.2849
+marginal,unbiased,4.2831
+maximum likelihood,residual,4.2828
+likelihood,exponential family,4.2767
+regularization,quadratic,4.2764
+log likelihood,expected information,4.2758
+markov process,continuous process,4.2739
+sparse,random variable,4.2726
+odds ratio,inference,4.2698
+reduction,spline,4.2698
+univariate,information,4.2692
+spline,joint,4.268
+approximation,poisson process,4.2678
+cox model,log-normal distribution,4.2676
+probability,gamma,4.2667
+markov chain,sample,4.2637
+events,random variable,4.2637
+joint,binomial,4.2597
+maximum likelihood estimator,boundary,4.2586
+univariate,brownian motion,4.2582
+marginal,hypothesis,4.2581
+random variables,additive functional,4.2577
+randomized,variable,4.2565
+bounded,partial derivative,4.2557
+poisson,statistic,4.2557
+gaussian,upper bound,4.2548
+policy,backtracking,4.2546
+approximate,quadratic,4.2514
+marginal,loglinear models,4.2485
+mcmc,strong markov property,4.2477
+natural scale,joint,4.2473
+convergence,maximum likelihood,4.2461
+log likelihood,maximum likelihood,4.2457
+chi-squared,joint,4.2436
+semigroup,partial derivative,4.2429
+matrix,hypothesis,4.2409
+cauchy,continuous function,4.2409
+distance,markov process,4.2401
+bounded,weak uniqueness,4.2398
+square integrable martingale,properties,4.2339
+information,expected,4.2336
+continuous,additive functional,4.2325
+transformations,joint,4.2295
+quasi-newton,log likelihood,4.2276
+matrix,boundary,4.2245
+sparse coding,descent,4.223
+sample,rejection sampling,4.2225
+norm,least excessive majorant,4.2199
+square integrable martingale,submartingale,4.2197
+log-normal distribution,weibull,4.2193
+deviance,normal,4.2178
+encoder,descent,4.2164
+optimal value,convex optimization,4.2154
+maximum likelihood estimator,borel,4.2134
+deep learning,probability,4.2131
+error,constraint,4.2127
+marginal,likelihood,4.2127
+martingale problem,additive functional,4.2102
+brownian motion,random variables,4.2094
+optimization,objective function,4.209
+odds,response,4.2067
+dirichlet,cantor,4.2066
+chains,poisson process,4.2063
+median,cox model,4.2019
+likelihood,expected information,4.2016
+norm,borel,4.1999
+mcmc,proposal distribution,4.1998
+generalized linear,fisher’s exact test,4.198
+envelope,distribution,4.197
+simulated annealing,optimization,4.1965
+bayesian,hypothesis,4.1955
+nonlinear,trials,4.1941
+matrix,interpretation,4.1936
+markov chain,average,4.1897
+markov chain,borel,4.1883
+statistics,random variable,4.1873
+martingale problem,exponential,4.1866
+matrix,exponential family,4.1797
+estimator,simulation,4.1791
+spline,expected value,4.1771
+marginal,exponential family,4.1771
+maximum likelihood estimator,confidence interval,4.1767
+bootstrapping,mcmc,4.175
+optimization,newton method,4.1733
+information,hessian,4.1722
+response,log likelihood,4.1718
+hazard function,median,4.1688
+markov process,factor,4.168
+optimization,stationary,4.1633
+optimization,expected information,4.1611
+chains,markov chain,4.1553
+reinforcement learning,random variables,4.1538
+negative binomial,correlation,4.1514
+filtration,distribution function,4.1513
+characteristic function,least excessive majorant,4.1497
+kernel,central limit theorem,4.1487
+distributions,poisson process,4.1469
+matrix,martingale,4.1435
+sparse coding,expected,4.1425
+odds,statistic,4.138
+convergence,additive functional,4.1376
+borel,predictable,4.1374
+design matrix,likelihood,4.1372
+parameter,approximate,4.1372
+stationary,likelihood,4.1366
+random sample,probability,4.1332
+envelope,simulation,4.1328
+infinitesimal generator,borel,4.1328
+natural scale,gaussian,4.1306
+correlation,stepwise,4.1298
+hazard ratio,maximum likelihood estimator,4.1298
+interaction,poisson,4.1296
+policy,quadratic,4.1261
+discrete,borel,4.1219
+boundary,conditional probability,4.1217
+linear regression,joint,4.1189
+distribution,poisson process,4.1173
+aic,univariate,4.1163
+martingale,stochastic process,4.1146
+sample,fitting,4.1145
+objective function,convergence,4.1142
+hypothesis,variance,4.113
+approximation,brownian motion,4.1128
+cumulative,continuous,4.1104
+crossover,sample,4.1081
+approximate,variance,4.1081
+sparse,expected,4.108
+cauchy,strong markov process,4.1068
+average,likelihood,4.1043
+distribution,central limit theorem,4.1041
+poisson point process,mean,4.1028
+bounded,information,4.1027
+maximum likelihood estimator,gamma,4.1006
+bounded,negative binomial,4.0994
+glm,sample,4.0974
+independent,linear regression,4.0958
+random variable,maximum a posteriori probability,4.0956
+sampling,newton’s method,4.0952
+convergence,borel,4.0916
+domain,integral,4.0912
+transition densities,markov process,4.0867
+sparse,descent,4.0865
+points,integral,4.0862
+information,likelihood,4.0852
+discrete,submartingale,4.0849
+boundary,increasing process,4.0824
+response,transformations,4.0816
+mcmc,conditional,4.0814
+borel,trials,4.0807
+independent,gamma,4.0798
+martingale,laplace transform,4.0794
+random sample,joint,4.0777
+information,quadratic,4.076
+cauchy,boundary,4.076
+anova,variable,4.0749
+lipschitz continuous,markov process,4.0738
+hyperparameter,random variable,4.0734
+mcmc,standard error,4.0723
+posterior density,likelihood,4.0718
+convergence,likelihood ratio statistic,4.0679
+maximum likelihood,log likelihood,4.0678
+assumption,expected value,4.0673
+estimation,log likelihood,4.0653
+semigroup,supremum,4.0647
+local search,sample,4.0639
+conditional,continuous function,4.0628
+statistic,odds,4.0624
+simulation,confidence interval,4.0622
+gaussian,strong markov process,4.0595
+distribution,exponential,4.0583
+mcmc,recurrence,4.0566
+marginal model,marginal,4.0561
+approximation,exponential family,4.0553
+normal,distribution,4.0548
+independence,binomial,4.0542
+dirichlet problem,bounded,4.0537
+independent,laplace transform,4.0522
+distribution,distribution function,4.0516
+weak uniqueness,least excessive majorant,4.0496
+univariate,additive functional,4.049
+points,descent,4.0488
+additive functional,bounded,4.0474
+semigroup,girsanov theorem,4.0448
+binary,binomial,4.0444
+bayesian,deviance,4.0435
+filtration,variance,4.0426
+bounded,submartingale,4.042
+predictor,splines,4.0413
+bounded,additive functional,4.0402
+chi-squared,independent,4.0395
+sample,distributions,4.0394
+variable,assumption,4.0388
+information,spline,4.0368
+linear regression,gradient descent,4.0354
+maximum likelihood estimator,exponential,4.0352
+neighborhood,optimization,4.0322
+probabilities,binomial,4.0321
+filtration,trial,4.0308
+marginal,link function,4.0293
+correlation,probability mass function,4.0283
+brownian bridge,bounded,4.0281
+linear regression,derivative,4.0277
+matrix,trial,4.0242
+bounded,subinterval,4.0223
+asymptotic,independent,4.0219
+likelihood ratio statistic,independent,4.0208
+borel,embedding,4.0196
+predictable,poisson process,4.0182
+node,descent,4.0178
+error,backtracking,4.0178
+expectation,random sample,4.0167
+hazard function,quantile,4.0164
+least excessive majorant,conditional probability,4.0159
+almost surely,markov process,4.0151
+continuous,norm,4.0118
+bounded,equations,4.011
+variable,geometric,4.0088
+optimization,maximum likelihood estimate,4.0083
+dirichlet,random variable,4.0073
+censored data,transformation,4.007
+borel,conditional,4.007
+estimation,expected,4.0067
+martingale problem,maximum a posteriori probability,4.006
+probability,gradient method,4.0041
+filtration,events,4.0035
+deep learning,gradient descent,4.0034
+exponential,weibull,4.003
+matrix,binomial,4.0028
+logistic model,expectation,4.0025
+neighborhood,univariate,4.0022
+odds,probability mass function,4.0018
+parameter,normal,4.001
+optimization,borel,4.0007
+pearson,independent,3.997
+boltzmann machine,random variable,3.9957
+response,joint,3.9944
+optimization,backtracking,3.9943
+transformation,joint,3.9916
+censored data,probit,3.9901
+probabilities,marginal,3.9888
+reduction,predictor,3.9835
+norm,poisson,3.983
+spline,events,3.9818
+degrees of freedom,joint,3.9803
+likelihood,variance,3.9794
+poisson process,random variables,3.9784
+chains,distributions,3.9778
+markov chain,uniform,3.9759
+minimal augmented filtration,filtration,3.9753
+mcmc,uniform,3.9748
+poisson process,continuous,3.9708
+conditional,boundary,3.9698
+local martingale,stochastic process,3.9671
+likelihood,distribution function,3.967
+norm,probability mass function,3.9656
+bayesian,bias,3.9651
+weight,variable,3.9626
+assumption,events,3.9617
+posterior density,conditional,3.9567
+distribution,gradient descent,3.9566
+log likelihood,trials,3.9554
+approximation,gamma,3.9551
+canonical,continuous,3.9534
+random variable,random sample,3.9522
+gradient,domain,3.9519
+factor,convergence,3.9516
+calibration,predictor,3.9507
+martingale problem,supremum,3.949
+likelihood equations,binomial,3.9482
+l´evy process,error,3.9474
+residual,unbiased estimator,3.9452
+deep learning,backtracking,3.9451
+expected information,independent,3.9444
+aic,reduction,3.9436
+median,log likelihood,3.9411
+likelihood-ratio,random variable,3.9407
+distribution,probability plot,3.939
+martingale problem,girsanov theorem,3.9389
+norm,expected value,3.9385
+discrete,properties,3.9384
+marginal,quasi-likelihood,3.938
+fitting,gee,3.9378
+markov process,i.i.d.,3.9347
+tight,mean,3.9343
+estimation,variance,3.9297
+neighborhood,multivariate,3.9295
+aic,logistic model,3.9293
+filtration,uniform,3.929
+norm,maximum a posteriori probability,3.9286
+logistic model,hypergeometric,3.9258
+statistic,joint,3.9247
+logit,expected value,3.9226
+cauchy problem,strong markov process,3.9222
+binary,simulating,3.9222
+domain,almost surely,3.9218
+nonlinear,expected value,3.9215
+inference,variance,3.9208
+nonlinear,trial,3.9199
+candidate solution,average,3.9179
+linear model,likelihood,3.9178
+neural network,random variable,3.9178
+matrix,maximum likelihood,3.9174
+integral,newton’s method,3.9172
+inference,stationary,3.9142
+continuation ratio,logistic model,3.9138
+energy function,simulating,3.9128
+gibbs sampler,envelope,3.9122
+natural scale,least excessive majorant,3.9101
+poisson’s equation,predictable,3.9079
+l´evy process,almost surely,3.9045
+expected information,probability,3.9045
+laplace transform,probability,3.9043
+stepwise,interaction,3.9038
+log likelihood,conditional probability,3.9024
+random effects,covariance matrix,3.9016
+continuous,shrinkage,3.9008
+influence,markov process,3.8999
+weight,confidence interval,3.8968
+conditional,natural parameter,3.8967
+transformation,variable,3.8933
+importance sampling,simulation,3.8925
+natural scale,strong markov process,3.8913
+poisson’s equation,borel,3.8902
+dirichlet,poisson,3.8892
+domain,product,3.8883
+independent,linear model,3.8878
+estimator,envelope,3.8869
+approximate,newton,3.8859
+cox model,exponential,3.8858
+approximation,parameter,3.8847
+convergence,strong markov property,3.8837
+optimization,joint,3.8833
+bounded,supremum,3.8821
+sampling,simulation,3.8818
+sample,gibbs sampler,3.8797
+matrix,unbiased,3.8796
+hypothesis,likelihood,3.8792
+partition function,descent,3.8783
+unbiased,random variable,3.8782
+markov property,increasing process,3.8774
+chains,sample,3.8772
+inference,log likelihood,3.8764
+product,continuous function,3.8759
+cauchy,domain,3.8758
+likelihood,maximum likelihood,3.8737
+parameter,independent,3.8735
+aic,transformations,3.8722
+continuous,independent,3.8715
+spline,moment generating function,3.8702
+candidate solution,mean,3.8686
+marginal,linear model,3.8678
+exponential family,joint,3.8669
+markov process,uniformly integrable,3.8661
+cox model,probability mass function,3.866
+maximum likelihood estimator,markov property,3.8652
+multivariate,predictor,3.8648
+markov process,trials,3.8648
+inference,exponential,3.8647
+l´evy process,itˆo’s formula,3.8646
+convergence,distribution,3.8642
+cauchy,borel,3.864
+log odds,expected,3.8637
+fuzzy q-iteration,newton,3.8636
+generalized linear,likelihood-ratio,3.863
+probabilities,random sample,3.8627
+domain,supremum,3.862
+binomial,independence,3.8611
+random effects,binomial,3.8599
+posterior density,log likelihood,3.8587
+kolmogorov,markov process,3.8581
+filtration,discrete,3.8573
+fuzzy q-iteration,quadratic,3.8569
+l´evy process,maximum a posteriori probability,3.8566
+logit,deviance,3.8564
+variance,properties,3.856
+bounded,borel,3.8548
+pooling,descent,3.8543
+inference,probability mass function,3.8543
+poisson,maximum a posteriori probability,3.853
+exponential family,independent,3.8502
+distributions,lower semicontinuous,3.8498
+glmm,poisson,3.8496
+stepwise,continuous,3.8487
+distributions,sample,3.848
+cauchy problem,information,3.8477
+dirichlet,continuous,3.8471
+sum of squares,log likelihood,3.8463
+domain,cantor,3.8458
+quantile,matrix,3.8432
+brownian bridge,brownian motion,3.843
+square integrable martingale,h¨older continuous,3.8423
+stochastic process,conditional,3.8402
+likelihood,interpretation,3.8391
+optimization,distribution,3.8383
+strong markov property,information,3.8379
+confidence interval,mean,3.8356
+average,newton,3.8356
+joint,random sample,3.8352
+cox model,hazard function,3.8346
+random variables,strong markov process,3.8338
+exponential,independent,3.8337
+strong markov property,stochastic integral,3.832
+brownian motion,supremum,3.8314
+bounded,approximate,3.8309
+domain,polyhedron,3.8306
+markov property,square integrable martingale,3.8305
+points,brownian motion,3.8285
+random variables,state space,3.8277
+domain,affine set,3.8273
+mcmc,rejection sampling,3.8272
+stepwise,random variables,3.827
+univariate,distribution,3.8263
+variance,hessian,3.8257
+approximate,gradient method,3.8244
+policy evaluation,value function,3.8235
+l´evy process,joint,3.8234
+value function,maximum a posteriori probability,3.8226
+nonparametric,expected,3.8224
+conditional,weight,3.8219
+logistic model,quadratic,3.8211
+convergence,gamma,3.819
+proposal distribution,stationary,3.8145
+approximation,newton’s method,3.8144
+independent,equations,3.8114
+logistic model,glm,3.8104
+predictor,fitting,3.808
+marginal,trial,3.8064
+cauchy,approximate,3.8057
+log odds,random variable,3.8055
+stopping time,expected,3.8042
+shrinkage,binary,3.8041
+local martingale,gaussian,3.8032
+maximum a posteriori probability,convergence,3.8027
+conditional,interpretation,3.8015
+characteristic function,integral,3.8012
+normal,bias,3.8005
+poisson,expected value,3.8004
+markov process,consistency,3.8004
+martingale,parameter,3.8002
+markov chain,least excessive majorant,3.799
+information,descent,3.7985
+variable selection,random variables,3.7981
+logit,gee,3.7965
+variable,distribution function,3.7958
+bootstrapping,spline,3.7955
+bayesian,linear regression,3.7954
+shrinkage,interaction,3.7949
+continuous,negative binomial,3.7943
+product formula,filtration,3.7917
+filtration,expected value,3.7896
+poisson,cantor,3.7896
+test statistic,random variable,3.7887
+markov chain,points,3.7878
+increasing process,normal,3.7876
+inference,likelihood,3.7875
+conditioning,independent,3.7864
+domain,variable,3.7864
+independent,generalized linear,3.7853
+residual,linear regression,3.7816
+estimator,gradient descent,3.7814
+l´evy process,girsanov theorem,3.7811
+normal,markov process,3.7786
+variable,degrees of freedom,3.778
+increasing process,continuous,3.7755
+logistic model,moment,3.7754
+random variable,continuous-time,3.7753
+median,matrix,3.7733
+cumulative,logit,3.7733
+regularization,expected,3.7727
+marginal,nonlinear,3.771
+sample,multivariate normal,3.7704
+brownian motion,filtration,3.7694
+unbiased estimator,normal,3.7675
+conditional,critical region,3.7671
+asymptotic,odds,3.7665
+boundary,square integrable martingale,3.7664
+predictable,probability,3.7657
+bivariate,kernel,3.7643
+inference,trials,3.7641
+variable,random variables,3.764
+martingale,independent,3.7625
+asymptotic,normal,3.7619
+parameter,interpretation,3.761
+components,nonlinear,3.7601
+continuous,expectation,3.7589
+semimartingale,random variables,3.7545
+spline,trial,3.7535
+continuous,cantor,3.7534
+exponential family,log likelihood,3.7531
+infinitesimal generator,cantor,3.753
+natural scale,girsanov theorem,3.7511
+sample,generalized linear,3.7509
+convergence,objective function,3.7488
+mean,test statistic,3.7475
+unbiased,exponential,3.7473
+mean,order statistics,3.7467
+gibbs sampler,boundary,3.745
+product,least excessive majorant,3.7428
+censored data,transformations,3.7426
+parameter,order statistics,3.7403
+optimization,probability plot,3.7402
+generalized linear,likelihood,3.7402
+shrinkage,cox model,3.7372
+joint,probability mass function,3.7371
+domain,strong markov property,3.7363
+parameter,cumulant-generating function,3.7361
+natural scale,poisson,3.7353
+error,spline,3.7348
+fourier transform,brownian motion,3.7348
+optimization,least excessive majorant,3.7343
+maximum likelihood,conditional probability,3.7343
+univariate,conditional,3.7342
+reduction,joint,3.734
+sample,interaction,3.7326
+deviance,binomial,3.7326
+binary,variance,3.7315
+borel,conditional probability,3.731
+poisson,trial,3.7294
+gradient method,dual,3.7289
+bias,random sample,3.728
+estimator,binomial,3.7274
+random variables,stationary,3.7273
+probability,condition number,3.727
+stochastic integral,continuous,3.727
+dual,variable,3.7263
+mean,independence,3.7261
+weak uniqueness,distribution,3.7257
+local search,optimization,3.7239
+nonlinear,log likelihood,3.7238
+calibration,maximum likelihood estimator,3.722
+odds,loglinear models,3.72
+mean,dirichlet problem,3.7186
+independent,convergence,3.7175
+maximum likelihood,trials,3.7164
+sampling,gradient method,3.7156
+almost surely,mean,3.7156
+continuous function,stopping time,3.7149
+transformations,spline,3.7147
+independent,rss,3.7128
+policy,newton,3.7118
+log odds,binomial,3.7098
+correlation,information,3.7095
+maximum likelihood estimator,maximum likelihood,3.7095
+sample,discrete,3.708
+poisson,continuous,3.707
+maximum likelihood estimator,distribution,3.7069
+markov process,supremum,3.7067
+optimization,likelihood ratio statistic,3.7058
+univariate,state space,3.7047
+gaussian,mean,3.7038
+predictor,cluster,3.7036
+martingale problem,utility,3.7025
+brownian bridge,mean,3.7007
+approximate,q-iteration,3.7001
+posterior density,variance,3.6997
+matrix,residual,3.6989
+semimartingale,filtration,3.6982
+stochastic process,distribution,3.6975
+increasing process,stochastic process,3.6953
+power,odds,3.695
+logistic model,wald statistic,3.6948
+cross-entropy,parameter,3.6934
+residual,bias,3.6931
+null set,h¨older continuous,3.6919
+approximate,random sample,3.6898
+mean,strong markov property,3.6895
+random variable,continuous function,3.6893
+optimization,posterior density,3.6889
+profile likelihood,random sample,3.688
+factor,backtracking,3.6878
+logit,quasi-likelihood,3.6874
+crossover,optimization,3.687
+normal,order statistics,3.6863
+l´evy process,multidimensional,3.6856
+recall,convergence,3.6846
+objective function,sample,3.6843
+poisson,parameter,3.6829
+least excessive majorant,continuous martingale,3.6824
+sample,condition number,3.6823
+mean,exponential family,3.6822
+poisson’s equation,product,3.6819
+distribution,hypergeometric,3.68
+donsker invariance principle,borel,3.679
+poisson,trials,3.6763
+itˆo’s formula,independent,3.6759
+components,predictor,3.6757
+variance,null distribution,3.6754
+distribution,recurrence,3.6743
+variance,invariant,3.6742
+matrix,invariant,3.6722
+boundary,martingale,3.6719
+trials,probability,3.6718
+power,normal,3.6707
+policy iteration,value function,3.6706
+sample,distribution,3.6689
+mse,random variables,3.6677
+bayesian,linear model,3.6676
+filtration,parameter,3.6667
+weight,binomial,3.666
+binomial,variance,3.666
+domain,multidimensional,3.6655
+martingale,expectation,3.6633
+linear regression,trials,3.6628
+norm,martingale,3.6625
+fourier transform,filtration,3.6621
+error,central limit theorem,3.6618
+properties,normal,3.6612
+martingale problem,error,3.6611
+joint,descent,3.6606
+estimation,confidence interval,3.6605
+semigroup,probabilities,3.6597
+normal,sum of squares,3.6587
+null set,expected,3.6587
+correlation,simulation,3.6586
+error,moment generating function,3.6585
+sample,hypergeometric,3.6584
+submartingale,normal,3.6583
+approximate,expected,3.6577
+bayesian,exponential,3.6571
+response,bandwidth,3.6547
+estimator,second derivative,3.6543
+unbiased,likelihood,3.6527
+likelihood-ratio,binomial,3.6511
+variance,time series,3.6504
+bayesian,poisson process,3.6499
+parameter,mcmc,3.6496
+link function,p-value,3.6493
+cauchy problem,least excessive majorant,3.649
+conditional,response,3.6488
+independent,power,3.6482
+approximation,exponential,3.6478
+poisson,test statistic,3.6476
+normal,critical region,3.646
+factor,variance,3.6457
+bayesian,unbiased,3.645
+odds,likelihood equations,3.6445
+mean,time series,3.6442
+poisson,minimal augmented filtration,3.6427
+tight,borel,3.6409
+binomial,response,3.6383
+binomial,probability mass function,3.638
+binary,log likelihood,3.6375
+martingale problem,almost surely,3.6364
+cauchy,strong markov property,3.6359
+joint,exponential,3.6359
+linear model,residual,3.6355
+l´evy process,hitting time,3.6337
+asymptotic,expected,3.6334
+random effects,missing data,3.6324
+brownian motion,doob’s inequalities,3.6309
+descent,optimal value,3.6299
+univariate,mean,3.6283
+variance,second-order,3.6261
+mcmc,univariate,3.6257
+aic,statistics,3.6248
+bayes,markov process,3.6231
+compensator,brownian motion,3.6229
+distribution,second-order,3.6229
+itˆo’s formula,laplace transform,3.6224
+chebyshev’s inequality,probability,3.6219
+variance,cumulant-generating function,3.6216
+mean,second-order,3.6198
+sample,backtracking line search,3.6193
+chi-squared,expected,3.6192
+sample,gaussian quadrature,3.618
+marginal,bias,3.6171
+reward function,approximate,3.6152
+exponential,parameter,3.6144
+mcmc,multivariate normal,3.6142
+pearson,conditional,3.6125
+simulated annealing,average,3.6123
+unbiased,simulating,3.6114
+assumption,continuous function,3.6106
+supremum,central limit theorem,3.6103
+components,variable selection,3.6102
+variance,stepwise,3.6098
+log likelihood,nonlinear,3.6094
+logit,probability density function,3.6093
+quasi-newton,random sample,3.6076
+independent,critical region,3.6068
+logistic regression,likelihood-ratio,3.6068
+poisson point process,borel,3.6068
+natural scale,exponential,3.6065
+maximum likelihood,bias,3.6057
+poisson,confidence interval,3.6053
+weak uniqueness,product,3.605
+estimator,trial,3.605
+rejection sampling,integral,3.6047
+probabilities,gee,3.6046
+cumulative,predictor,3.6045
+q-iteration,approximate,3.6037
+glmm,generalized linear,3.6014
+residual,curve fitting,3.599
+residual,curve fitting,3.599
+bayesian,bayesian,3.5988
+span,curve fitting,3.5977
+span,curve fitting,3.5977
+binomial,statistic,3.5971
+mcmc,strong markov process,3.5965
+predictor,nonlinear,3.5962
+quadratic,domain,3.5953
+newton,quadratic,3.5953
+dual,power,3.5934
+random variable,additive functional,3.5925
+martingale problem,partial derivative,3.5902
+strong markov property,integral,3.5899
+state space,bounded,3.5894
+binary,trials,3.5892
+posterior distribution,markov process,3.5888
+parameter,distribution function,3.5874
+chains,univariate,3.5848
+poisson’s equation,martingale,3.5848
+statistic,normal,3.5841
+natural scale,partial derivative,3.5837
+calibration,interaction,3.5827
+error,eigenvalue,3.5813
+invariance,borel,3.5809
+maximum likelihood estimator,variance,3.5792
+curve fitting,bivariate,3.5766
+curve fitting,bivariate,3.5766
+hessian,newton step,3.5763
+logistic regression,glm,3.5755
+stepwise,joint,3.5754
+poisson point process,h¨older continuous,3.5752
+exponential,gamma,3.5736
+random variable,strong markov property,3.5736
+chains,proposal distribution,3.5729
+gaussian,strong markov property,3.5719
+logit,expected,3.5711
+components,reduction,3.5706
+matrix,strong markov property,3.5687
+domain,convex hull,3.5682
+markov property,continuous,3.566
+sample,gee,3.5657
+simulated annealing,mean,3.5637
+interaction,covariance matrix,3.5631
+matrix,linear regression,3.563
+variance,independent,3.5626
+random sample,variance,3.5615
+minimal augmented filtration,parameter,3.56
+brownian motion,semimartingales,3.5599
+maximum a posteriori probability,descent,3.559
+policy,gradient method,3.5587
+logit,log odds,3.5583
+probability,upper bound,3.5583
+approximate,policy evaluation,3.5579
+weak uniqueness,weak uniqueness,3.5576
+estimator,probability mass function,3.5573
+boundary,norm,3.5567
+deviance,residual,3.5552
+domain,least excessive majorant,3.5547
+weak solution,bounded,3.5534
+regularization,dual,3.5534
+increasing process,parameter,3.5531
+parameter,random variable,3.553
+borel,distribution,3.5519
+l´evy process,utility,3.5509
+envelope,envelope,3.5496
+nonlinear,probability mass function,3.5461
+integral,univariate,3.5458
+posterior density,random sample,3.5451
+almost surely,bounded,3.5429
+distribution,strong markov process,3.542
+candidate solution,multivariate,3.5418
+residual,independent,3.5414
+sample,sampling,3.5388
+inference,trial,3.5376
+variance,probability plot,3.5359
+probability,convergence,3.5352
+characteristic function,variable,3.5341
+weak convergence,strong markov process,3.533
+estimator,points,3.5329
+convergence,cumulants,3.5307
+mcmc,time series,3.5289
+integral,exponential,3.526
+autoencoder,descent,3.5248
+deep learning,newton’s method,3.5237
+univariate,variable,3.5233
+markov chain,bayesian,3.5231
+weibull,hazard function,3.5188
+mean,geometric,3.5181
+response,design matrix,3.5179
+random sample,exponential,3.5177
+residual,estimation,3.5174
+random variables,dirichlet problem,3.517
+natural scale,strong markov property,3.5163
+reinforcement learning,h¨older continuous,3.5136
+natural scale,utility,3.5136
+borel,probability,3.5127
+logistic model,odds ratio,3.5119
+gaussian,additive functional,3.5107
+simulation,simulation,3.5106
+distribution,multivariate normal,3.5102
+sparse,shrinkage,3.5099
+effective sample size,integral,3.5089
+logistic regression,poisson,3.5088
+generalized linear,confidence interval,3.5084
+log-normal distribution,log-logistic distribution,3.5083
+back-propagation,descent,3.5066
+gibbs sampler,least excessive majorant,3.5055
+mse,gradient,3.5051
+correlation,parameter,3.5039
+discrimination,binary,3.5036
+characteristic function,maximum a posteriori probability,3.5036
+maximum likelihood estimator,mean,3.5035
+log likelihood,interpretation,3.5028
+policy,parameter,3.5022
+sampling,hessian,3.501
+dirichlet,itˆo’s formula,3.4985
+convergence,maximum likelihood estimate,3.4971
+constraint,optimization,3.4945
+sparse,variable selection,3.4939
+candidate solution,random sample,3.492
+unbiased,distribution,3.4908
+infinitesimal generator,information,3.489
+quasi-newton,multivariate,3.4884
+logistic model,nonlinear,3.4877
+transformation,likelihood,3.4861
+expectation,exponential,3.4858
+optimization,approximation,3.4839
+marginal distribution,marginal,3.4831
+newton’s method,dual,3.4829
+sparse,reduction,3.4817
+univariate,strong markov property,3.4786
+predictable,poisson,3.4779
+predictor,kernel,3.4775
+response,spline,3.4771
+policy,filtration,3.4767
+average,expected,3.4766
+domain,generalized inequality,3.4754
+response,independence,3.4753
+semigroup,recall,3.4746
+random variable,stationary,3.4744
+independence,random variable,3.474
+likelihood,trials,3.4729
+nonlinear,sum of squares,3.472
+state space,itˆo’s formula,3.4717
+condition number,dual,3.4717
+conditional,polynomial,3.4712
+curve fitting,estimator,3.4702
+curve fitting,estimator,3.4702
+random variable,poisson,3.4685
+convergence,points,3.4672
+log-logistic distribution,hazard function,3.4654
+residual,exponential family,3.463
+lower semicontinuous,stopping time,3.463
+quadratic,descent,3.4617
+predictor,trial,3.4615
+conditional,inference,3.4613
+envelope,simpson’s rule,3.46
+maximum likelihood estimator,strong markov process,3.4577
+deep learning,derivative,3.4572
+bounded,lower semicontinuous,3.4562
+estimation,exponential,3.4551
+properties,descent,3.4541
+finite-dimensional distributions,borel,3.454
+minimal augmented filtration,normal,3.4532
+rss,likelihood,3.4532
+proposal distribution,sample,3.4516
+matrix,unbiased estimator,3.4511
+linear regression,hypothesis,3.451
+jeffreys prior,markov process,3.4507
+estimator,joint,3.4494
+policy,random variables,3.4492
+convergence,normal,3.447
+log odds,generalized linear,3.4455
+itˆo’s formula,poisson process,3.4454
+univariate,missing data,3.4453
+variable,transformations,3.4451
+censored data,probability,3.4449
+log-logistic distribution,maximum likelihood estimator,3.4433
+power,domain,3.443
+stochastic integral,maximum a posteriori probability,3.4426
+poisson,martingale,3.4417
+gibbs sampler,importance sampling,3.4417
+log likelihood,binomial,3.4415
+cauchy,additive functional,3.4404
+dirichlet,least excessive majorant,3.4404
+state space,predictable,3.4387
+markov chain,simulation,3.4385
+mean,sample size,3.4379
+stopping time,expectation,3.4376
+binomial,likelihood-ratio,3.4374
+log likelihood,unbiased,3.4374
+deep learning,condition number,3.4366
+glm,pearson,3.4345
+probability,probabilities,3.4342
+log-normal distribution,maximum likelihood estimator,3.4342
+logistic model,sample size,3.4326
+log likelihood,residual,3.4299
+continuous,continuous function,3.4295
+unbiased,spline,3.4287
+maximum likelihood estimate,normal,3.4276
+cross-entropy,brownian motion,3.4263
+value function,value function,3.4251
+stationary,log likelihood,3.4251
+pearson,expected,3.4241
+probability,lower semicontinuous,3.424
+conditional,likelihood-ratio,3.4228
+deep learning,second derivative,3.4217
+candidate solution,nonlinear,3.4199
+generalized linear,random variable,3.4197
+sum of squares,unbiased,3.4176
+additive functional,square integrable martingale,3.413
+dirichlet,maximum a posteriori probability,3.4129
+integral,stopping time,3.4129
+hessian,newton,3.4115
+joint,maximum likelihood,3.4105
+odds,logistic regression,3.4101
+information,expected value,3.4094
+properties,expected,3.4092
+factor,newton,3.4076
+estimator,distribution function,3.4074
+equations,bounded,3.4053
+assumption,matrix,3.4031
+brownian motion,maximum a posteriori probability,3.4025
+fisher’s exact test,random variable,3.4024
+estimating equations,marginal,3.4014
+random effects,deviance,3.4004
+distribution,cumulants,3.4001
+spline,trials,3.3997
+martingale problem,hitting time,3.3996
+potential,sample,3.3988
+markov chain,exponential,3.3972
+bootstrapping,convergence,3.3969
+variance,strong markov process,3.3965
+nonlinear,descent,3.3963
+normal,boundary,3.3955
+random variable,right continuous with left limits,3.3953
+mcmc,moral graph,3.3945
+cauchy,bounded,3.3942
+inference,exponential family,3.3937
+mcmc,variance reduction,3.3934
+predictor,trials,3.3934
+multinomial,expected,3.3927
+maximum likelihood estimator,invariant,3.3923
+inference,simulating,3.3911
+value function,convergence,3.3903
+probabilities,sample,3.3883
+quadratic,expected,3.3882
+distributions,simulating,3.3879
+newton,convergence,3.3873
+brownian motion,semimartingale,3.3869
+markov property,conditional probability,3.3867
+shrinkage,random variables,3.3859
+newton’s method,likelihood,3.3848
+likelihood,conditional probability,3.3829
+chains,stationary distribution,3.3824
+weibull,cumulative,3.3817
+dirichlet,information,3.3812
+random variables,continuous function,3.3812
+exponential,maximum likelihood estimator,3.3807
+dirichlet,integral,3.3803
+manifold,quadratic,3.3795
+sample,subinterval,3.3777
+conditional,likelihood equations,3.3757
+independence,joint,3.3756
+martingale problem,poisson,3.3754
+fitting,poisson,3.3748
+covariance,simulating,3.3745
+parameter,conditional probability,3.3743
+closure,least excessive majorant,3.3731
+correlation,expected value,3.3726
+distribution,time series,3.3714
+average,random sample,3.3713
+strong markov property,conditional probability,3.371
+semimartingale,submartingale,3.3704
+interpretation,probability,3.3701
+marginal,central limit theorem,3.3695
+objective function,average,3.369
+likelihood,weibull,3.3685
+odds,cluster,3.3679
+glm,random variable,3.3675
+l´evy process,partial derivative,3.3674
+bayesian,conditional probability,3.3669
+bayesian,unbiased estimator,3.3667
+distribution,uniform,3.3661
+joint,trials,3.3654
+likelihood,cumulant-generating function,3.3646
+logistic model,independence,3.364
+continuous,average,3.3633
+mean,aic,3.3622
+residual,sum of squares,3.3615
+cumulative,cluster,3.3614
+value function,continuous-time,3.361
+cross-entropy,policy,3.3596
+multivariate,log likelihood,3.3593
+newton method,descent,3.3579
+matrix,additive functional,3.3544
+continuous,optional stopping theorem,3.3541
+variance,normal linear model,3.3534
+domain,completeness,3.3534
+value function,descent,3.3507
+odds ratio,glm,3.3498
+quantile regression,binary,3.3498
+random sample,log likelihood,3.3486
+likelihood,binomial,3.3484
+factor,moment generating function,3.348
+bias,exponential,3.3466
+maximum likelihood estimator,information,3.3466
+gamma,normal,3.3465
+sample,points,3.3462
+weak uniqueness,strong markov property,3.3435
+inference,interpretation,3.3404
+stationary distribution,stationary,3.3403
+simulated annealing,multivariate,3.3394
+mcmc,dirichlet problem,3.3394
+independence,poisson,3.3379
+bayesian,rss,3.3365
+optimization,observed information,3.3351
+weak solution,martingale,3.3334
+median,random variable,3.3316
+envelope,polynomial,3.3308
+manifold,probability,3.3305
+conditional,estimation,3.3292
+cauchy problem,cantor,3.3282
+submartingale,conditional,3.328
+curve fitting,smoother,3.328
+curve fitting,smoother,3.328
+censored data,likelihood,3.3279
+mean,recurrence,3.3268
+independence,independence,3.3268
+error,kkt,3.3253
+distribution,upper bound,3.325
+parameter,hypergeometric,3.3246
+stopping time,convergence,3.3241
+supervised learning,gradient,3.324
+probability,nonlinear,3.3237
+parameter,univariate,3.3236
+distributions,inference,3.3233
+variance,shrinkage,3.3232
+average,backtracking,3.322
+residual,expected,3.3219
+norm,binomial,3.3214
+expectation,martingale,3.3205
+newton step,domain,3.3188
+continuous,itˆo’s formula,3.3171
+approximate,policy iteration,3.3169
+assumption,information,3.3162
+information,gamma,3.3161
+markov chain,distribution,3.3155
+minimal augmented filtration,h¨older continuous,3.3155
+factor,maximum likelihood estimator,3.3155
+semigroup,lower semicontinuous,3.3154
+cauchy problem,distribution,3.3151
+local martingale,continuous-time,3.3138
+cox model,test statistic,3.3136
+martingale problem,multidimensional,3.3088
+envelope,sampling,3.3079
+neighborhood,distribution,3.3074
+odds ratio,likelihood-ratio,3.3073
+kkt,descent,3.3072
+maximum likelihood,unbiased,3.307
+response,rss,3.3069
+calibration,logistic model,3.3064
+binary,log odds,3.3054
+statistic,probability,3.3049
+value function,minimal augmented filtration,3.3045
+odds,random variable,3.3035
+closure,borel,3.3034
+unbiased estimator,random variable,3.3032
+cox model,estimator,3.301
+mean,power,3.3007
+power,expected,3.3005
+aic,vertices,3.3003
+strong markov process,markov process,3.3002
+continuous-time,random variable,3.3
+strong markov process,random variable,3.2994
+binomial,sample,3.2993
+borel,quadratic variation,3.2989
+continuous function,continuous,3.2985
+random variables,normal,3.2969
+variable,gibbs sampler,3.2969
+bias,likelihood,3.2953
+dirichlet problem,itˆo’s formula,3.2938
+characteristic function,strong markov process,3.2928
+censored data,log likelihood,3.2928
+glm,statistic,3.2913
+probabilities,log likelihood,3.2897
+inference,residual,3.2879
+linear model,hypothesis,3.2873
+residual,logistic model,3.2864
+mean,normal linear model,3.2862
+infinitesimal generator,product,3.2857
+optional stopping theorem,probability,3.2853
+generalized linear,hypergeometric,3.2841
+variable,hypergeometric,3.284
+weight,integral,3.2839
+cumulative,parameter,3.2824
+deviance,random variable,3.2822
+additive functional,conditional,3.2807
+mixture models,response,3.2795
+domain,cones,3.2794
+chains,joint,3.2792
+continuous-time,joint,3.278
+quantile,predictor,3.2777
+stationary distribution,sample,3.2771
+profile likelihood,mean,3.2765
+simulated annealing,random sample,3.2757
+borel,semimartingale,3.2755
+additive functional,norm,3.2753
+error,gradient method,3.273
+sample,approximate,3.2706
+natural scale,invariant,3.2689
+analysis of variance,likelihood,3.2682
+logistic model,confidence interval,3.2676
+conditioning,joint,3.2666
+components,transformations,3.2661
+objective function,newton’s method,3.2623
+generalized linear,distributions,3.2622
+deviance,chi-squared,3.2618
+interpretation,log likelihood,3.261
+optimization,additive functional,3.2604
+odds,covariance matrix,3.2597
+quasi-likelihood,response,3.2594
+mean,binary logistic model,3.2593
+candidate solution,newton’s method,3.2592
+predictor,estimation,3.2592
+poisson,stopping time,3.2578
+confidence interval,random sample,3.2575
+approximation,cumulant-generating function,3.256
+probability,order statistics,3.256
+convergence,strong markov process,3.2554
+response,hypergeometric,3.2553
+distribution,bernoulli,3.2533
+confidence interval,odds,3.2527
+median,censored data,3.2524
+kernel,hessian,3.2519
+variance,moment,3.2518
+mean,polynomial,3.2512
+norm,gaussian,3.2512
+censored data,weight,3.2501
+maximum likelihood,random sample,3.2496
+convergence,envelope,3.2486
+multivariate,maximum likelihood,3.2479
+median,sample,3.2452
+martingale,recall,3.2449
+gradient,geometric,3.2429
+borel,probability mass function,3.2429
+linear regression,descent,3.2428
+fitted values,poisson,3.2423
+infinitesimal generator,variable,3.2421
+nonparametric,marginal,3.2421
+sample,newton’s method,3.2418
+crossover,average,3.2418
+interaction,hypothesis,3.2397
+filtration,probability mass function,3.2393
+optimal value,optimization,3.239
+random variable,dirichlet problem,3.2385
+correlation,median,3.2383
+inference,deviance,3.2383

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8"></meta>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.2.2/echarts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+    function draw(){
+        var text = $("#graph-input").val();
+        var data = eval(text);
+        var graph = data2Graph(data);
+        drawGraph(graph);
+    }
+    function data2Graph(data) {
+        var graph = {}
+        var vertices = {}
+        var links = [];
+        for (var i = 0; i < data.length; i++) {
+            var s = String(data[i][0]);
+            var t = String(data[i][1]);
+            var v = data[i][2];
+            vertices[s] = s;
+            vertices[t] = t;
+            links.push({'source' : s, 'target' : t, 'value' : v});
+        }
+        var nodes = [];
+        var labels = [];
+        $.each(vertices, function(k, v) {
+            nodes.push({'name' : v, 'value' : v, 'catogery' : parseInt(k)});
+            labels.push({'name' : k, 'keyword' :'', 'base': k})
+        });
+        graph['links'] = links;
+        graph['data'] = nodes;
+        graph['label'] = labels;
+        return graph;
+    }
+    function drawGraph(graph) {
+        var myChart = echarts.init(document.getElementById("echarts-main"));
+        console.log(graph.data)
+        console.log(graph.label)
+        var option = {
+            tooltip: {},
+            series : [
+                {
+                    type: 'graph',
+                    layout: 'force',
+                    circular: {
+                        rotateLabel: true,
+                    },
+                    symbolSize: 30,
+                    data: graph.data,
+                    links: graph.links,
+                    edgeSymbol: ['none', 'arrow'],
+                    roam: true,
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'right',
+                            formatter: function (e) {
+                                return e['data']['value'];
+                            }
+                        }
+                    },
+                    categories: graph.label,
+                    focusNodeAdjacency : true,
+                    edgeLabel: {
+                        normal: {
+                            show: true,
+                            position: 'middle'
+                        }
+                    },
+                    lineStyle: {
+                        normal: {
+							width: 2.5,
+							color: '#909090',
+                            curveness: 0
+                        }
+                    },
+                    force: {
+                        repulsion: 1000,
+                        edgeLength: 200
+                    }
+                }
+            ]
+        };
+        myChart.setOption(option);
+    }
+    $(document).ready(function(){
+        draw();
+        $("#gen-btn").on("click", function(){
+            draw();
+        });
+    });
+</script>
+</head>
+<body>
+<p>在下方文本框内输入有向图JSON（[source, target, value]）：</p>
+<textarea id="graph-input" style="height:210px;width:500px">
+[['distributions', 'markov process', 25.3913], ['marginal', 'marginal', 23.4965], ['markov process', 'stopping time', 23.3053], ['sample', 'random variable', 23.0825], ['correlation', 'variable', 22.278], ['optimization', 'random sample', 20.8516], ['markov process', 'itˆo’s formula', 20.7993], ['probability', 'markov process', 20.1246], ['logistic model', 'logistic model', 19.4475], ['mean', 'random variable', 19.3085], ['random effects', 'gee', 19.2546], ['correlation', 'predictor', 19.0751], ['markov process', 'local martingale', 19.0568], ['markov process', 'continuous', 18.9986], ['markov process', 'probability', 18.7886], ['markov process', 'stochastic integral', 18.4758], ['logistic model', 'random variable', 18.1178], ['distribution', 'markov process', 18.113], ['logistic model', 'expected', 17.5271], ['semigroup', 'markov process', 17.4764], ['semigroup', 'continuous function', 17.4475], ['error', 'random variable', 17.3728], ['sample', 'spline', 17.2317], ['variable', 'spline', 16.974], ['gee', 'marginal', 16.5309], ['continuous', 'expected', 16.3048], ['markov process', 'random variable', 16.1858], ['mean', 'log likelihood', 16.0848], ['logit', 'random variable', 16.0578], ['logit', 'logit', 16.0261], ['estimator', 'random variable', 15.8829], ['mcmc', 'markov process', 15.6919], ['cox model', 'maximum likelihood estimator', 15.6612], ['logistic model', 'spline', 15.5013], ['brownian motion', 'random variable', 15.4776], ['probability', 'joint', 15.4738], ['normal', 'joint', 15.4672], ['variance', 'markov process', 15.3687], ['distribution', 'descent', 15.3197], ['variance', 'likelihood', 15.2873], ['univariate', 'markov process', 15.1114], ['mean', 'joint', 15.0552], ['normal', 'probability', 14.9996], ['martingale problem', 'martingale', 14.8713], ['stopping time', 'filtration', 14.8604], ['gradient', 'descent', 14.8363], ['bounded', 'expected', 14.7681], ['sample', 'simulating', 14.7616], ['continuous', 'markov process', 14.6323], ['brownian motion', 'expected', 14.4566]]
+</textarea>
+<p><button id="gen-btn">生成力导向图</button></p>
+<div id="echarts-main" style="height:1000px;width:1500px;border:1px dashed;"></div>
+</body>
+</html>

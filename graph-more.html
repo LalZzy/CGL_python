@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    </meta>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.2.2/echarts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="concepts.json"></script>
+    <script type="text/javascript" src="chapters.json"></script>
+    <script type="text/javascript">
+        function draw() {
+            var text = $("#graph-input").val();
+            var data = eval(text);
+            var graph = data2Graph(data);
+            drawGraph(graph);
+        }
+        function data2Graph(data) {
+            var graph = {}
+            var vertices = {}
+            var links = [];
+            for (var i = 0; i < data.length; i++) {
+                var s = String(data[i][0]);
+                var t = String(data[i][1]);
+                var v = data[i][2];
+                vertices[s] = s;
+                vertices[t] = t;
+                links.push({ 'source': s, 'target': t, 'value': v });
+            }
+            var nodes = [];
+            var labels = [];
+            $.each(vertices, function (k, v) {
+                nodes.push({ 'name': v, 'value': v, 'catogery': parseInt(k) });
+                labels.push({ 'name': k, 'keyword': '', 'base': k })
+            });
+            graph['links'] = links;
+            graph['data'] = nodes;
+            graph['label'] = labels;
+            return graph;
+        }
+        function drawGraph(graph) {
+            var myChart = echarts.init(document.getElementById("echarts-main"));
+            console.log(graph.data)
+            console.log(graph.label)
+            var option = {
+                tooltip: {},
+                series: [
+                    {
+                        type: 'graph',
+                        layout: 'force',
+                        circular: {
+                            rotateLabel: true,
+                        },
+                        symbolSize: 30,
+                        data: graph.data,
+                        links: graph.links,
+                        edgeSymbol: ['none', 'arrow'],
+                        roam: true,
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'right',
+                                formatter: function (e) {
+                                    return e['data']['value'];
+                                }
+                            }
+                        },
+                        categories: graph.label,
+                        focusNodeAdjacency: true,
+                        edgeLabel: {
+                            normal: {
+                                show: true,
+                                position: 'middle'
+                            }
+                        },
+                        lineStyle: {
+                            normal: {
+                                width: 2.5,
+                                color: '#909090',
+                                curveness: 0
+                            }
+                        },
+                        force: {
+                            repulsion: 1000,
+                            edgeLength: 200
+                        }
+                    }
+                ]
+            };
+            myChart.setOption(option);
+        }
+        $(document).ready(function () {
+            draw();
+            $("#gen-btn").on("click", function () {
+                draw();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        var conceptChapter = JSON.parse(concepts);
+        var chapterChapter = JSON.parse(chapters);
+        var books = ["StatisticalModels", "CaterDataAna", "ComputationalStatistics", "ConvexOpt", "DeepLearning", "RegressionModelingStrategies", "ReinforcementLearning", "Probability", "StochasticProcess"];
+        var colors = ["#37A2DA", "#32C5E9", "#67E0E3", "#9FE6B8", "#FFDB5C", "#FF9F7F", "#FB7293", "#E062AE", "#E7BCF3"];
+        function drawConceptChapter() {
+            var source = $("#source-con").val();
+            source = eval(source);
+            var target = $("#target-con").val();
+            target = eval(target);
+            var chapter = concept2Chapter(source, target);
+            console.log(source);
+            console.log(chapter);
+            drawConcept(source, 'source');
+            drawConcept(target, 'target');
+            var data = chapterChapter.filter(x => (chapter.includes(x.source)) || (chapter.includes(x.target)));
+            var graph = data2Plot(data);
+            drawGraphCh(graph);
+        }
+        function concept2Chapter(source, target) {
+            var id = conceptChapter.filter(x => (x.concept === source) || (x.concept === target));
+            var chapters = [];
+            for (i = 0; i < id.length; i++) {
+                chapters.push(id[i]['chapter']);
+            }
+            return chapters;
+        }
+        function drawConcept(concept, plotArea) {
+            var myChart = echarts.init(document.getElementById(plotArea));
+            var chapters = [];
+            var num = [];
+            var chapterBook = [];
+            for (i = 0; i < conceptChapter.length; i++) {
+                if (conceptChapter[i]['concept'] === concept) {
+                    chapters.push(conceptChapter[i]['chapter']);
+                    num.push(conceptChapter[i]['num']);
+                    chapterBook.push(conceptChapter[i]['book']);
+                }
+            }
+            var option;
+            option = {
+                color: ['#3398DB'],
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                        type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: [
+                    {
+                        type: 'category',
+                        data: chapters,
+                        axisTick: {
+                            alignWithLabel: true
+                        }
+                    }
+                ],
+                yAxis: [
+                    {
+                        type: 'value'
+                    }
+                ],
+                series: [
+                    {
+                        name: '直接访问',
+                        type: 'bar',
+                        barWidth: '60%',
+                        data: num
+                    }
+                ],
+                itemStyle: {
+                    normal: {
+                        color: function (params) {
+                            var chapterName = chapters[params.dataIndex];
+                            var bookName = chapterBook[chapters.indexOf(chapterName)];
+                            return colors[books.indexOf(bookName)];
+                        }
+                    }
+                },
+            };
+            myChart.setOption(option);
+        }
+        function data2Plot(data) {
+            var graph = {}
+            var vertices = {}
+            var links = [];
+            for (var i = 0; i < data.length; i++) {
+                var s = String(data[i]['source']);
+                var t = String(data[i]['target']);
+                var v = data[i]['relation'];
+                vertices[s] = s;
+                vertices[t] = t;
+                links.push({ 'source': s, 'target': t, 'value': v });
+            }
+            var nodes = [];
+            var labels = [];
+            var myCol = [];
+            $.each(vertices, function (k, v) {
+                var bookName = conceptChapter.filter(x => (x.chapter === k));
+                bookName = bookName[0]['book'];
+                nodes.push({ 'name': v, 'value': v, 'catogery': parseInt(k), 'itemStyle': { normal: { color: colors[books.indexOf(bookName)] } } });
+                labels.push({ 'name': k, 'keyword': '', 'base': k });
+            });
+            graph['links'] = links;
+            graph['data'] = nodes;
+            graph['label'] = labels;
+            return graph;
+        }
+        function drawGraphCh(graph) {
+            var myChart = echarts.init(document.getElementById("chapters"));
+            var option = {
+                tooltip: {},
+                series: [
+                    {
+                        type: 'graph',
+                        layout: 'force',
+                        circular: {
+                            rotateLabel: true,
+                        },
+                        symbolSize: 30,
+                        data: graph.data,
+                        links: graph.links,
+                        edgeSymbol: ['none', 'arrow'],
+                        roam: true,
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'right',
+                                formatter: function (e) {
+                                    return e['data']['value'];
+                                },
+                                textStyle: {
+                                    fontWeight: 'bold',
+                                    fontSize: 15
+                                }
+                            }
+                        },
+                        categories: graph.label,
+                        focusNodeAdjacency: true,
+                        edgeLabel: {
+                            normal: {
+                                show: false,
+                            }
+                        },
+                        lineStyle: {
+                            normal: {
+                                width: 2.5,
+                                color: '#909090',
+                                curveness: 0
+                            }
+                        },
+                        force: {
+                            repulsion: 1000,
+                            edgeLength: 200
+                        }
+                    }
+                ]
+            };
+            myChart.setOption(option);
+        }
+        $(document).ready(function () {
+            drawConceptChapter();
+            $("#gen-ch-btn").on("click", function () {
+                drawConceptChapter();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="block1" style="height:300px;width:1200px;">
+        <div id="input1" style="height:300px;width:600px;float:left;">
+            <p>在下方文本框内输入有向图JSON（[source, target, value]）：</p>
+            <textarea id="graph-input" style="height:130px;width:500px">
+[['markov process', 'stopping time', 25.6634], ['distributions', 'markov process', 25.4591], ['marginal', 'marginal', 22.834], ['correlation', 'variable', 21.6443], ['logistic model', 'logistic model', 21.156], ['probability', 'markov process', 20.7435], ['markov process', 'itˆo’s formula', 20.3265], ['sample', 'spline', 20.2856], ['optimization', 'random sample', 20.1509], ['markov process', 'continuous', 19.0559], ['markov process', 'local martingale', 18.9209], ['logistic model', 'random variable', 18.9091], ['logit', 'logit', 18.7596], ['probability', 'joint', 18.4413], ['correlation', 'predictor', 18.3233], ['markov process', 'probability', 18.2349], ['markov process', 'stochastic integral', 17.368], ['distribution', 'markov process', 17.2364], ['semigroup', 'continuous function', 17.0346], ['semigroup', 'markov process', 17.0279], ['continuous', 'expected', 16.8776], ['mcmc', 'markov process', 16.8333], ['sample', 'simulating', 16.8203], ['mean', 'random variable', 16.7786], ['random effects', 'gee', 16.6417], ['variable', 'spline', 16.4865], ['mean', 'joint', 16.396], ['sample', 'random variable', 16.3787], ['brownian motion', 'random variable', 16.0834], ['random effects', 'marginal', 15.9501], ['error', 'random variable', 15.7443], ['normal', 'joint', 15.7262], ['distribution', 'descent', 15.6778], ['probability', 'random variable', 15.5594], ['mean', 'log likelihood', 15.4952], ['filtration', 'random variable', 15.3693], ['normal', 'probability', 15.1117], ['l´evy process', 'markov process', 14.9909], ['gradient', 'descent', 14.9463], ['gee', 'marginal', 14.8448], ['estimator', 'random variable', 14.8396], ['martingale problem', 'markov process', 14.8209], ['markov process', 'random variable', 14.762], ['univariate', 'markov process', 14.5251], ['stopping time', 'filtration', 14.507], ['variance', 'markov process', 14.4971], ['cox model', 'censored data', 14.4503], ['borel', 'itˆo’s formula', 14.371], ['gaussian', 'markov process', 14.3292], ['likelihood', 'normal', 14.2788], ['policy', 'policy', 14.0689], ['convergence', 'markov process', 14.0153], ['brownian motion', 'expected', 14.011], ['logit', 'random variable', 14.0076], ['markov process', 'bounded', 13.8667], ['bounded', 'expected', 13.8604], ['probability', 'binomial', 13.8352], ['predictor', 'spline', 13.8072], ['continuous', 'markov process', 13.6582], ['conditional', 'binomial', 13.6479], ['gradient', 'newton', 13.6006], ['bayesian', 'joint', 13.5442], ['continuous', 'trials', 13.5378], ['distribution', 'random sample', 13.404], ['mcmc', 'mcmc', 13.376], ['probability', 'probability mass function', 13.3521], ['markov process', 'square integrable martingale', 13.2603], ['log likelihood', 'likelihood', 13.1847], ['martingale problem', 'martingale', 13.1732], ['likelihood', 'independent', 13.1528], ['cox model', 'maximum likelihood estimator', 13.1317], ['logistic model', 'expected', 13.0685], ['continuous', 'probability mass function', 13.0419], ['logit', 'logistic regression', 13.0317], ['variance', 'random sample', 12.7626], ['parameter', 'joint', 12.7444], ['probability', 'expected', 12.7226], ['censored data', 'mean', 12.7201], ['probability', 'boundary', 12.6955], ['likelihood', 'random sample', 12.6224], ['likelihood', 'likelihood', 12.6153], ['conditional', 'likelihood', 12.5881], ['random variables', 'markov process', 12.5307], ['variable', 'joint', 12.5257], ['odds', 'binomial', 12.4804], ['independent', 'joint', 12.4126], ['random variable', 'mean', 12.4058], ['probability', 'probability', 12.3224], ['bounded', 'brownian motion', 12.3214], ['error', 'independent', 12.3178], ['logistic model', 'spline', 12.3155], ['cauchy', 'markov process', 12.2998], ['continuous', 'mean', 12.2926], ['gradient', 'random variable', 12.2692], ['convex optimization', 'domain', 12.2161], ['bayesian', 'normal', 12.204], ['filtration', 'normal', 12.1983], ['bounded', 'continuous function', 12.1798], ['factor', 'expected', 12.1042], ['markov process', 'increasing process', 12.0595]]
+</textarea>
+            <p><button id="gen-btn">生成力导向图</button></p>
+        </div>
+    </div>
+
+    <div id='t0' style='height:40px;width:1000px'><b>概念关系图</b></div>
+    <div id="echarts-main" style="height:640px;width:1200px;border:1px dashed;"></div>
+    <div id="blank" style="height:50px;width:1500px;"></div>
+
+    <div style="height:100px;width:500px;float:left;">
+        <div style="height:90px;width:150px;float:left;">
+            <p>输入先修概念：</p>
+            <textarea id="source-con" style="height:30px;width:150px">'random variable'</textarea>
+
+        </div>
+        <div style="height:90px;width:150px;float:right;">
+            <div style="height:63px;width:150px;float:right;"></div>
+            <button id="gen-ch-btn" style='float:right'>生成概念-章节关系</button>
+        </div>
+        <div style="height:90px;width:150px;float:right;">
+            <p>输入后修概念：</p>
+            <textarea id="target-con" style="height:30px;width:150px">'logistic model'</textarea>
+        </div>
+        <div style="height:80px;width:150px;float:left;">
+        </div>
+    </div>
+    <div style="height:90px;width:1350px">
+        <p> </p>
+    </div>
+    <div id="concept-chapter" style="height:760px;width:1350px">
+        <div style='height:900px;width:700px;float:left;'>
+            <div id='t1' style='height:1px;width:700px'><b>先修概念在各章出现次数【一种颜色代表一本书】</b></div>
+            <div id='source' style='height:350px;width:700px'></div>
+            <div id='t2' style='height:20px;width:700px'></div>
+            <div id='t2' style='height:1px;width:700px'><b>后修概念在各章出现次数【一种颜色代表一本书】</b></div>
+            <div id='target' style='height:350px;width:700px'></div>
+        </div>
+        <div id='t3' style='height:40px;width:600px;float:right;'><b>章节关系图</b></div>
+        <div id='chapters' style='height:700px;width:600px;float:right'></div>
+    </div>
+
+</body>
+
+</html>

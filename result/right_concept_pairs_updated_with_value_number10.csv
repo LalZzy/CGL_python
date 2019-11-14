@@ -1,0 +1,37 @@
+source,target,value1,value2,number1,number2
+likelihood function,information matrix,0.0348,-0.3354,47,10
+uncertainty,probability,0.7949,-4.1876,12,385
+variable,random variable,7.4379,-1.2205,164,42
+expectation,variance,-1.0958,0.7025,40,244
+random variable,variance,2.2069,8.1154,42,244
+binary response,logistic model,1.3671,2.6292,29,243
+indicator variable,logistic model,0.2266,0.3064,16,243
+likelihood function,aic,-0.0419,0.1854,47,37
+link function,logistic model,-0.9602,2.063,35,243
+convergence,delta method,0.6193,0.4438,139,30
+glm,quasi-likelihood,0.2096,0.4866,59,56
+multinomial distribution,glm,-0.1114,0.4893,11,59
+derivative,gradient,-0.7244,0.1123,18,22
+conditional independence,markov chain,-0.1218,0.0274,44,75
+covariance,correlation,-0.2882,-0.6521,55,127
+independence,conditional independence,0.4535,0.6608,165,44
+integral,expectation,0.887,2.3357,60,40
+likelihood,maximum likelihood estimator,1.7768,8.4775,142,32
+normal distribution,exponential family,0.4081,0.3836,27,11
+probability,odds,2.0472,0.4199,385,294
+sample,permutation,2.2393,2.335,533,26
+variance,standard deviation,-0.2566,-0.4143,244,52
+variance,covariance,-3.6406,0.199,244,55
+null hypothesis,type i error,-0.0286,-0.0397,17,12
+exponential family,glm,-0.1136,0.2145,11,59
+likelihood function,aic,-0.0419,0.1854,47,37
+variance,correlation,0.1217,-5.6027,244,127
+poisson distribution,poisson glm,-0.0029,0.0935,18,13
+likelihood function,logistic regression,0.2555,0.1954,47,143
+binomial distribution,logistic regression,-0.0088,0.2538,10,143
+binary response,logistic regression,0.9954,0.6641,29,143
+likelihood function,likelihood equations,0.3707,0.395,47,64
+chi-squared distribution,chi-squared statistic,0.0085,-0.0097,21,10
+independence,conditional independence,0.4535,0.6608,165,44
+glm,glmm,-0.3004,3.013,59,52
+glm,poisson glm,0.0426,0.1967,59,13

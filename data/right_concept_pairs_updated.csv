@@ -1,0 +1,184 @@
+lorentz cone,quadratic inequality
+proper cone,generalized inequality
+laplace transform,cumulant generating function
+inequality constraint,slack variable
+polyhedron,chebyshev center
+kkt,kinematic constraints
+likelihood function,information matrix
+line search,backtracking line search
+descent,newton step
+probability distribution,unit vector
+matrix,eigenvector
+matrix,moore-penrose pseudoinverse
+singular value decomposition,moore-penrose pseudoinverse
+matrix,trace operator
+matrix,determinant
+uncertainty,probability
+variable,random variable
+random variable,probability distribution
+discrete,probability distribution
+continuous,probability distribution
+probability distribution,marginal probability
+probability,conditional probability
+probability distribution,independence
+probability distribution,expectation
+expectation,variance
+random variable,variance
+probability distribution,variance
+random variable,bernoulli distribution
+probability distribution,bernoulli distribution
+random variable,gaussian distribution
+expectation,gaussian distribution
+variance,gaussian distribution
+convex function,convex optimization
+hessian,convex function
+kernel,gaussian kernel
+mean,anova
+hypothesis test,anova
+variance,anova
+binary response,logistic model
+indicator variable,logistic model
+conditional probability,cox model
+variance,studentized bootstrap
+test statistic,hypothesis test
+normal distribution,t distribution
+quantile,q-q plot
+likelihood function,aic
+likelihood function,bic
+nonparametric regression,local regression
+quantile,quantile regression
+collinearity,ridge regression
+link function,logistic model
+t distribution,cauchy distribution
+logistic model,propensity score
+likelihood function,accelerated failure time model
+nonparametric test,wilcoxon
+conditional probability,bayesian modeling
+covariance matrix,canonical correlation
+convergence,delta method
+binomial distribution,probit model
+distribution,dispersion parameter
+exponential distribution,glm
+glm,quasi-likelihood
+geometric distribution,hypergeometric distribution
+multinomial distribution,log-linear model
+multinomial distribution,multinomial response models
+multinomial distribution,glm
+negative binomial distribution,glm
+poisson distribution,log-linear model
+value function,actor-critic
+gradient,actor-critic
+policy gradient,actor-critic
+bellman equation,value iteration
+bellman equation,policy iteration
+bellman equation,bellman error
+residual,bellman error
+score function,bellman error
+value function,bellman error
+bellman equation,policy evaluation
+greedy policy,policy improvement
+reward function,markov decision process
+continuous function,differentiable function
+derivative,differentiable function
+derivative,gradient
+optimal policy,policy search
+parametric approximation,projected bellman equation
+bellman equation,projected bellman equation
+policy evaluation,projected bellman equation
+parametric approximation,fuzzy q-iteration
+value iteration,fuzzy q-iteration
+q-iteration mapping,fuzzy q-iteration
+approximation,fuzzy q-iteration
+projection mapping,fuzzy q-iteration
+radial basis functions,cross-entropy policy search
+exponential,radial basis functions
+representative initial states,approximate value iteration
+state space,markov decision process
+conditional independence,markov chain
+convergence,central limit theorem
+covariance,correlation
+expectation,markov's inequality
+expectation,moment generating function
+independence,conditional independence
+integral,expectation
+likelihood,maximum likelihood estimator
+matrix,jacobian determinant
+moment,moment generating function
+normal distribution,multivariate normal distribution
+normal distribution,exponential family
+poisson distribution,poisson process
+probability,odds
+random variable,waiting time
+random variable,stochastic process
+sample,empirical distribution function
+sample,studentized bootstrap
+sample,permutation
+stochastic process,waiting time
+stochastic process,markov chain
+stochastic process,random walk
+transformation,jacobian determinant
+transition probability,markov chain
+variance,standard deviation
+variance,conditional variance
+variance,covariance
+null hypothesis,type i error
+linear model,least squares estimation
+markov process,gibbs sampler
+contingency table,analysis of variance
+interaction,factorial experiment
+exponential family,glm
+distribution function,survivor function
+missing data,gem algorithm
+variance,brownian motion
+variance,stopping time
+stochastic process,poisson process
+stochastic process,strong markov process
+random variables,poisson process
+random variables,regular conditional probability
+quadratic variation,square integrable martingale
+probability,brownian motion
+probability,markov transition probabilities
+probability,weak uniqueness
+probability,prohorov metric
+probability,regular conditional probability
+probability,prohorov theorem
+poisson process,poisson point process
+normal,brownian motion
+mean,brownian motion
+mean,martingale
+mean,square integrable martingale
+martingale,square integrable martingale
+markov process,markov transition probabilities
+integral,markov transition probabilities
+integral,regular conditional probability
+independent increments,brownian motion
+independent increments,martingale
+independent,brownian motion
+independent,poisson process
+increasing process,square integrable martingale
+filtration,poisson process
+convergence,prohorov theorem
+brownian motion,square integrable martingale
+brownian motion,markov property
+likelihood function,bic
+likelihood function,aic
+linear probability model,backward elimination
+variance,correlation
+poisson distribution,poisson glm
+likelihood function,logistic regression
+logit transform,logistic regression
+binomial distribution,logistic regression
+binary response,logistic regression
+likelihood function,likelihood equations
+likelihood function,marginal likelihood
+likelihood function,penalized likelihood
+likelihood function,positive likelihood-ratio dependence
+poisson distribution,poisson sampling
+chi-squared distribution,chi-squared statistic
+independence,conditional independence
+logistic-normal distribution,logistic-normal model
+logistic distribution,logistic regression
+mixture models,conjugate mixture model
+glm,glmm
+glm,binomial glm
+glm,poisson glm

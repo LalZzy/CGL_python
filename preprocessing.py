@@ -46,7 +46,11 @@ def row_normlize(X):
     return (normalize(X, norm='l1', axis=1))
 
 ## 根据课程间先修关系，来生成(i,j,k)三元组，其中i表示第i门课，j表示课程i的先修，k表示非课程i的先修
-
+def inlinks(x, links):
+    for i in links:
+        if (sum(i == x) == len(x)):
+            return 1
+    return 0
 
 def generate_trn(links, n):
     # 生成课程i与课程j的先修关系示性矩阵。
@@ -90,3 +94,10 @@ def generate_triple(trn,sample_size = None):
             i_triple = i_triple[sample]
         triple = np.append(triple, i_triple, axis=0)
     return (triple[1:, :])
+
+if __name__ == '__main__':
+    import numpy as np
+    links = np.array([[1,2],[1,3],[2,4]])
+    trn = generate_trn(links,4)
+    tripple = generate_triple(trn)
+    print(tripple)

@@ -33,7 +33,7 @@ def incre_cgl_rank(X, st_idx, T1, T2, T3, A0, lamb, eta, tolerrence=0.00001, sil
     '''
     # TODO: 这里需要改
     # X1~4分别表示分块矩阵的四块，按行编号。
-    A = A.
+    A = A0.copy()
     row_st_idx, col_st_idx = st_idx
     X1 = X[:row_st_idx, :col_st_idx]
     X2 = X[:row_st_idx, col_st_idx:]
@@ -171,6 +171,7 @@ def test_incre(data_file, link_file, concept_file, file_type, incre_course_num, 
     import model
     A, F = model.cgl_rank(X, tripple, lamb=0.01, eta=1,
                           tolerence=0.001, silence=False)
+    print('finish training whole A\n\n')
     np.savetxt('result/ruc_A_whole.txt', A)
     # 用增量数据训练模型
     A, F = model.cgl_rank(X[:-incre_course_num, :-incre_concept_num], T, lamb=0.01,

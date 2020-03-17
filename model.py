@@ -14,10 +14,9 @@ def cgl_rank(X, triple, lamb, eta, silence=True, tolerence=1e-6, round=10):
     B = np.zeros((n, n))
     Q = np.zeros((n, n))
     r = 1
-    import pdb;pdb.set_trace()
     F = np.matmul(np.matmul(K, B), K)
     def loss_func(x): return max(
-        (1 - F[x[0]-1, x[1]-1] + F[x[0]-1, x[2]-1]), 0)**2
+        (1 - F[x[0], x[1]] + F[x[0], x[2]]), 0)**2
     # 按照定义计算loss，经常出现第一步损失变化为负的情况，所以先定义obj_old为Inf
     obj_old = np.inf
     while True:
@@ -30,8 +29,8 @@ def cgl_rank(X, triple, lamb, eta, silence=True, tolerence=1e-6, round=10):
             Delta[i, j] += sigma
             Delta[i, k] += -sigma
         while True:
-            B_old = B
-            F_old = F
+            B_old = B.copy()
+            F_old = F.copy()
             P = B - eta*(lamb*F - 2 * np.matmul(np.matmul(K, Delta), K))
             # 终止条件：当前一步的目标函数值的变化
             B = P + (r-1)/(r+2) * (P - Q)
@@ -40,12 +39,13 @@ def cgl_rank(X, triple, lamb, eta, silence=True, tolerence=1e-6, round=10):
             regularization_part = lamb/2 * (np.matmul(np.matmul(K, B), K) * B).sum()
             loss_part = sum(list(map(loss_func, triple)))
             obj = (loss_part + regularization_part) / (n*p)
+            obj = (loss_part + regularization_part)
             #print('old loss function: {}, new loss function: {}'.format(obj_old,obj))
             if obj_old < obj:
                 eta = eta * 0.95
                 # 此时并非发生更新，还原B,F矩阵
-                B = B_old
-                F = F_old
+                B = B_old.copy()
+                F = F_old.copy()
             else:
                 break
         loss_change = obj_old - obj

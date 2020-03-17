@@ -27,12 +27,13 @@ def split_tripple(tripple, incre_idx):
 
 
 
-def incre_cgl_rank(X, st_idx, T1, T2, T3, A, lamb, eta, tolerrence=0.00001, silence=False):
+def incre_cgl_rank(X, st_idx, T1, T2, T3, A0, lamb, eta, tolerrence=0.00001, silence=False):
     '''
     增量学习版本，可以支持一门课多个词的输入。
     '''
     # TODO: 这里需要改
     # X1~4分别表示分块矩阵的四块，按行编号。
+    A = A.
     row_st_idx, col_st_idx = st_idx
     X1 = X[:row_st_idx, :col_st_idx]
     X2 = X[:row_st_idx, col_st_idx:]
@@ -81,12 +82,8 @@ def incre_cgl_rank(X, st_idx, T1, T2, T3, A, lamb, eta, tolerrence=0.00001, sile
                 if F[i,j] - F[i,k] > 0:
                     correct2 += 1
                 total2 += 1
-            print('correct ratio T2:{}, T3:{}'.format(correct1/total1, correct2/total2))
                     
-            
             loss_part = sum(list(map(loss_func, T2))) + sum(list(map(loss_func, T3)))
-            print('loss part T2:{}, T3:{}'.format(sum(list(map(loss_func, T2))),
-                                                  sum(list(map(loss_func, T3)))))
             reg_part = lamb/2 * np.sqrt((A[:col_st_idx, col_st_idx:]**2).sum())
             cur_loss = loss_part + reg_part
             unit_loss_change = (old_loss - cur_loss) / A[:col_st_idx, col_st_idx:].size
@@ -103,6 +100,8 @@ def incre_cgl_rank(X, st_idx, T1, T2, T3, A, lamb, eta, tolerrence=0.00001, sile
             if round_A2 % 10 == 0:
                 print('num update A2: {}, eta: {}, loss decrease: {}'.format(round_A2, eta1, loss_change))
                 print('loss_part={}, reg_part={}'.format(loss_part, reg_part))
+                print('correct ratio T2:{}, T3:{}'.format(correct1/total1, correct2/total2))
+                print('loss part T2:{}, T3:{}'.format(sum(list(map(loss_func, T2))),sum(list(map(loss_func, T3)))))
         round_A2 += 1
         if loss_change < tolerrence:
             break
@@ -172,7 +171,7 @@ def test_incre(data_file, link_file, concept_file, file_type, incre_course_num, 
     import model
     A, F = model.cgl_rank(X, tripple, lamb=0.01, eta=1,
                           tolerence=0.001, silence=False)
-    np.savetxt('result/ruc_a_whole.txt', A)
+    np.savetxt('result/ruc_A_whole.txt', A)
     # 用增量数据训练模型
     A, F = model.cgl_rank(X[:-incre_course_num, :-incre_concept_num], T, lamb=0.01,
                           eta=1, tolerence=0.001, silence=False)
@@ -181,7 +180,6 @@ def test_incre(data_file, link_file, concept_file, file_type, incre_course_num, 
     print('\n\n\n')
     A1 = incre_cgl_rank(X, (n_course-incre_course_num, n_concept-incre_concept_num), T1, T2, T3, A, eta=5, lamb=0.01,
                         tolerrence=0.001)
-    import pdb;pdb.set_trace()
     np.savetxt('result/ruc_A_incre.txt', A1)
 
 

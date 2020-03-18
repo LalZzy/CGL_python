@@ -3,7 +3,7 @@ import numpy as np
 import sys
 import itertools
 from scipy.sparse import csr_matrix
-
+from CGL_python.preprocessing import row_normlize
 
 def generate_G(m, p, seed=0):
     '''
@@ -74,17 +74,17 @@ def generate_word_fre_matrix(word_num, course_num, log_sigma, incre_course, incr
       word_num: number of total words(concepts).
       course_num: number of total courses.
     """
-    result = np.random.lognormal(size=(course_num, word_num),sigma=log_sigma, mean=-0.5)
+    result = np.random.lognormal(size=(course_num, word_num), sigma=log_sigma, mean=-0.5)
     result = np.floor(result)
     result = result.astype(int)
     num_fre = np.bincount(result.reshape(-1))/result.size
     # 把除开最后m门课的最后n个词的其余词全设为0
-    result[:-incre_course,-incre_word:] = 0
+    result[:-incre_course, -incre_word:] = 0
     print("in word frequency matrix, {:.2%} is 0, {:.2%} is 1".format(num_fre[0], num_fre[1]))
     return result
 
 
-def generate_one_simulation_data(word_num, course_num, course_link_num, p, lab, log_sigma, incre_word,incre_course,seed):
+def generate_one_simulation_data(word_num, course_num, course_link_num, p, lab, log_sigma, incre_word, incre_course, seed):
     '''
     generate data using in one simulation
     first generate word-course frequency matrix, and word links, then calculate course links
@@ -95,6 +95,7 @@ def generate_one_simulation_data(word_num, course_num, course_link_num, p, lab, 
     fre_matrix = generate_word_fre_matrix(
         word_num=word_num, course_num=course_num, log_sigma=log_sigma,
         incre_course=incre_course, incre_word=incre_word)
+    fre_matrix = row_normlize(fre_matrix)
     F = np.dot(np.dot(fre_matrix, concept_matrix), fre_matrix.T)
     quantile = (1 - course_link_num / ((course_num * (course_num-1)))) * 100
     print('according to course_link_num={}, above F"s {} quantile is set to be 1, othres 0'.format(

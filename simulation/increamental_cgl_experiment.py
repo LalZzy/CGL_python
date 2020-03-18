@@ -12,6 +12,7 @@ def max_min(X):
 
 
 def one_experiment(data_gene_para):
+    result = {}
     word_num = data_gene_para['word_num']
     course_num = data_gene_para['course_num']
     course_link_num = data_gene_para['course_link_num']
@@ -24,16 +25,23 @@ def one_experiment(data_gene_para):
     data = generate_one_simulation_data(word_num=word_num, course_num=course_num, course_link_num=course_link_num,
                                         p=p, lab=data_gene_lab, seed=seed, log_sigma=log_sigma,
                                         incre_course=incre_course, incre_word=incre_word)
+    
+    eta = data_gene_para['eta']
+    tolerence = data_gene_para['tolerence']
+    algo_lamb = data_gene_para['algo_lamb']
 
     X = data['X']
+    result['X'] = X
     links = data['F']
     X = row_normlize(X)
     trn = generate_trn(links, X.shape[0])
     tripple = generate_triple(trn)
     lamb = 10000
-    A, F = cgl_rank(X, tripple, lamb=lamb, eta=10.0,
-                    tolerence=0.00001, silence=False)
 
+    ## 全量学习
+    A, F = cgl_rank(X, tripple, lamb=algo_lamb, eta=eta,
+                    tolerence=tolerence, silence=False)
+    
     from CGL_python.evaluation import generate_course_pairs
     weight_edge_list = generate_course_pairs(F, percentile=90)
     pre_edge_list = [[int(link[0]), int(link[1])] for link in weight_edge_list]
@@ -47,31 +55,35 @@ def one_experiment(data_gene_para):
     A_min_max = max_min(A)
     A_min_max
     whole_f_norm = np.linalg.norm(data['A'] - A_min_max, ord='fro')
+    result['whole_A'] = A
+    result['whole_f_norm'] = whole_f_norm
 
     # 增量学习
-    incre_courses = range(course_num+1)[-incre_course:]
+    incre_courses = range(course_num)[-incre_course:]
     from CGL_python.incremental_learning import split_tripple, incre_cgl_rank
     T, T1, T2, T3 = split_tripple(tripple, incre_courses)
-    A, F = cgl_rank(X[:-incre_course, :-incre_word], T, lamb=1,
-                    eta=0.01, tolerence=0.001, silence=False)
+    result['tripples'] = {'T': T, 'T1': T1, 'T2': T2, 'T3': T3}
+    print('reach here.')
+    A, F = cgl_rank(X[:-incre_course, :-incre_word], T, lamb=algo_lamb,
+                    eta=eta, tolerence=tolerence, silence=False)
     row_0 = np.zeros((incre_word, A.shape[1]))
     A = np.row_stack((A, row_0))
     col_0 = np.zeros((A.shape[0], incre_word))
     A = np.column_stack((A, col_0))
-    A1 = incre_cgl_rank(X=X, st_idx=(1, course_num-incre_word),
-                        T1=T1, T2=T2, T3=T3, A=A, eta=0.01, lamb=1, silence=True)
+    A1, F1 = incre_cgl_rank(X=X, st_idx=(course_num-incre_course, word_num-incre_word),
+                        T1=T1, T2=T2, T3=T3, A0=A, eta=eta, lamb=algo_lamb, 
+                        tolerrence=tolerence, silence=False)
     A1_min_max = max_min(A1)
 
     incre_f_norm = np.linalg.norm(data['A'] - A1_min_max, ord='fro')
-    print('fro-loss:')
+    print('incremental fro-loss:')
     print('whole: {}'.format(whole_f_norm))
     print('incre: {}'.format(incre_f_norm))
-    result = {
-        'whole_f_norm': whole_f_norm,
+    result.update({
         'incre_f_norm': incre_f_norm,
-        'whole_A': A,
         'incre_A': A1
-    }
+    })
+    import pdb;pdb.set_trace()
     return result
 
 
@@ -99,10 +111,27 @@ def one_group_experiment(data_gene_para, n_experiment, need_to_update_params):
         f.write('average,{:.4f},{:.4f}\n'.format(
             sum(whole_fnorms)/len(whole_fnorms), sum(incre_fnorms)/len(incre_fnorms)))
     ed = datetime.now()
-    print('cost total: {} seconds'.format((ed-st).second))
+    print('cost total: {} seconds'.format((ed-st).total_seconds()))
 
+def test_one():
+    data_gene_para = {
+        'word_num': 500,
+        'course_num': 30,
+        'course_link_num': 100,
+        'p': 0.01,
+        'lab': 0.1,
+        'seed': 0,
+        'log_sigma': 2,
+        'incre_course': 1,
+        'incre_word': 5,
+        'tolerence': 0.00001,
+        'algo_lamb': 1,
+        'eta': 0.01
+    }
+    n_experiment = 20
+    one_group_experiment(data_gene_para, n_experiment, need_to_update_params={})
 
-if __name__ == '__main__':
+def run():
     data_gene_para = {
         'word_num': 1000,
         'course_num': 30,
@@ -111,12 +140,17 @@ if __name__ == '__main__':
         'lab': 0.1,
         'seed': 0,
         'log_sigma': 2,
-        'incre_course': 2,
-        'incre_word': 5
+        'incre_course': 1,
+        'incre_word': 5,
+        'tolerence': 0.00001,
+        'algo_lamb': 1,
+        'eta': 0.01
     }
     n_experiment = 20
-    course_nums = [30, 40, 50]
-    word_nums = [500, 1000, 1500]
+    course_nums = [30]
+    word_nums = [500]
+    # course_nums = [30, 40, 50]
+    # word_nums = [500, 1000, 1500]
     need_to_update_params = []
     for i in course_nums:
         for j in word_nums:
@@ -131,3 +165,8 @@ if __name__ == '__main__':
                      [n_experiment] * len(need_to_update_params),
                      need_to_update_params,
                      )
+
+
+if __name__ == '__main__':
+    test_one()
+

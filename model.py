@@ -1,4 +1,5 @@
 import numpy as np
+from datetime import datetime
 from scipy.sparse.linalg import spsolve
 from scipy import sparse
 
@@ -7,6 +8,7 @@ from scipy import sparse
 
 def cgl_rank(X, triple, lamb, eta, silence=True, tolerence=1e-6, round=10):
     # 初始化参数B,Q,P
+    st = datetime.now()
     if type(X) != np.ndarray:
         X = X.toarray()
     K = np.dot(X, X.transpose())
@@ -24,7 +26,7 @@ def cgl_rank(X, triple, lamb, eta, silence=True, tolerence=1e-6, round=10):
         F = np.matmul(np.matmul(K, B), K)
         for t in triple:
             # 调整索引从0开始
-            i, j, k = t[0] - 1, t[1] - 1, t[2] - 1
+            i, j, k = t[0], t[1], t[2]
             sigma = max(0, 1 - F[i, j] + F[i, k])
             Delta[i, j] += sigma
             Delta[i, k] += -sigma
@@ -38,7 +40,7 @@ def cgl_rank(X, triple, lamb, eta, silence=True, tolerence=1e-6, round=10):
             Q = P
             regularization_part = lamb/2 * (np.matmul(np.matmul(K, B), K) * B).sum()
             loss_part = sum(list(map(loss_func, triple)))
-            obj = (loss_part + regularization_part) / (n*p)
+            # obj = (loss_part + regularization_part) / (n*p)
             obj = (loss_part + regularization_part)
             #print('old loss function: {}, new loss function: {}'.format(obj_old,obj))
             if obj_old < obj:
@@ -65,7 +67,8 @@ def cgl_rank(X, triple, lamb, eta, silence=True, tolerence=1e-6, round=10):
     A = np.matmul(np.matmul(X.transpose(), B), X)
     if type(A) != np.ndarray:
         A = np.asarray(A)
-    return(A, F)
+    ed = datetime.now()
+    return(A, F, (ed-st).total_seconds())
 
 # transductive-cgl-rank算法
 

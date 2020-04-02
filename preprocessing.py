@@ -70,7 +70,7 @@ def inlinks(x, links):
     return 0
 
 
-def generate_trn(links, n):
+def generate_trn(links, n, undirect=False):
     '''
     生成课程i与课程j的先修关系示性矩阵。
     input: 
@@ -79,6 +79,9 @@ def generate_trn(links, n):
     return: 
         一个2维的np.array，[[x,y,1],[x,z,0]]，前者表示x是y的先修，后者表示x不是z的先修。
     '''
+    if undirect:
+        links_inverse = np.array([[i[1],i[0]] for i in links])
+        links = np.concatenate([links,links_inverse])
     trn = np.zeros((n * (n - 1), 3), dtype=np.int)
     k = 0
     for i in range(n):
@@ -93,7 +96,7 @@ def generate_trn(links, n):
     return trn
 
 
-def generate_triple(trn, sample_size=None):
+def generate_triple(trn, sample_size=None, undirect=False):
     '''
     生成课程的三元数对(i,j,k)
     input:
@@ -130,5 +133,8 @@ if __name__ == '__main__':
     import numpy as np
     links = np.array([[1, 2], [1, 3], [2, 4]])
     trn = generate_trn(links, 5)
+    tripple = generate_triple(trn)
+    print(tripple)
+    trn = generate_trn(links, 5, undirect=True)
     tripple = generate_triple(trn)
     print(tripple)

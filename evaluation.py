@@ -10,7 +10,7 @@ class evaluation():
         I = self.triple[:,0]
         J = self.triple[:,1]
         K = self.triple[:,2]
-        auc = sum((self.F[I-1,J-1] - self.F[I-1, K-1]) > 0)/len(self.triple)
+        auc = sum((self.F[I,J] - self.F[I, K]) > 0)/len(self.triple)
         return(auc)
     
     def auc(self,trn):
@@ -33,7 +33,7 @@ class evaluation():
                 if i == j:continue
                 y_pred[n] = self.F[i,j]
                 n+=1
-        mapl = metrics.average_precision_score(y_true,y_pred)
+        mapl = metrics.average_precision_score(y_true, y_pred)
         return(mapl)
 
 

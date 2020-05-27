@@ -148,7 +148,6 @@ def calc_l2(A, X, st_idx, F, split_tripple_list):
     sigma3 = np.zeros((incre_course_num, row_st_idx))
     for t in T4:
         i, j, k = t
-        print(i,j,k)
         sigma2[i-row_st_idx, j-row_st_idx] -= max(0, 1 - F[i, j] + F[i, k])
         sigma3[i-row_st_idx, k] += max(0, 1 - F[i, j] + F[i, k])
     l2 += np.matmul(np.matmul(X4.transpose(), sigma2), X3) + np.matmul(np.matmul(X4.transpose(), sigma3), X1) 
@@ -158,7 +157,7 @@ def calc_l2(A, X, st_idx, F, split_tripple_list):
     for t in T5:
         i, j, k = t
         sigma4[i-row_st_idx, j] -= max(0, 1 - F[i, j] + F[i, k])
-        sigma5[i-row_st_idx, k-row_st_idx] -= max(0, 1 - F[i, j] + F[i, k])
+        sigma5[i-row_st_idx, k-row_st_idx] += max(0, 1 - F[i, j] + F[i, k])
     l2 += np.matmul(np.matmul(X4.transpose(), sigma4), X1) + np.matmul(np.matmul(X4.transpose(), sigma5), X3)
        
     sigma6 = np.zeros((incre_course_num, incre_course_num))
@@ -328,7 +327,7 @@ def incre_cgl_rank(X, st_idx, tripple, split_tripple_list, A0, lamb, eta, tolerr
                     correct2 += 1
                 total2 += 1
                     
-            loss_part = sum(list(map(loss_func, T2))) + sum(list(map(loss_func, T3)))
+            loss_part = sum(list(map(loss_func, T1))) + sum(list(map(loss_func, T2))) + sum(list(map(loss_func, T3))) + sum(list(map(loss_func, T4))) + sum(list(map(loss_func, T5)))+ sum(list(map(loss_func, T6))) + sum(list(map(loss_func, T7)))
             if update_A1:
                 loss_part += sum(list(map(loss_func, T))) 
             reg_part = lamb/2 * np.sqrt((A[:col_st_idx, col_st_idx:]**2).sum())
@@ -426,12 +425,13 @@ def test_incre(data_file, link_file, concept_file, file_type, incre_course_num, 
                           tolerence=0.001, silence=False)
     print('finish training whole A\n\n')
     # 用增量数据训练模型
-    A, F = model.cgl_rank(X[:-incre_course_num, :-incre_concept_num], T, lamb=0.01,
+    T = split_tripple_list[0]
+    A, F, st = model.cgl_rank(X[:-incre_course_num, :-incre_concept_num], T, lamb=0.01,
                           eta=1, tolerence=0.001, silence=False)
     
     A = gene_incre_matrix(A, incre_concept_num)
     print('\n\n\n')
-    A1, F1, st = incre_cgl_rank(X, (n_course-incre_course_num, n_concept-incre_concept_num), tripple, split_tripple_list, A, eta=5, lamb=0.01,
+    A1, F1, st = incre_cgl_rank_new(X, (n_course-incre_course_num, n_concept-incre_concept_num), tripple, split_tripple_list, A, eta=5, lamb=0.01,
                         tolerrence=0.001, update_A1=update_A1)
     file_prefix = 'undirect' if undirect else 'direct'
     file_prefix += '_update_A1' if update_A1 else 'noupdate_A1'

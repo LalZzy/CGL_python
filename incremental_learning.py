@@ -422,17 +422,17 @@ def test_incre(data_file, link_file, concept_file, file_type, incre_course_num, 
     # 用全量数据训练模型
     import model
     A0, F0, st = model.cgl_rank(X, tripple, lamb=0.01, eta=1,
-                          tolerence=0.001, silence=False)
+                          tolerence=1, silence=False)
     print('finish training whole A\n\n')
     # 用增量数据训练模型
     T = split_tripple_list[0]
     A, F, st = model.cgl_rank(X[:-incre_course_num, :-incre_concept_num], T, lamb=0.01,
-                          eta=1, tolerence=0.001, silence=False)
+                          eta=1, tolerence=1, silence=False)
     
     A = gene_incre_matrix(A, incre_concept_num)
     print('\n\n\n')
     A1, F1, st = incre_cgl_rank_new(X, (n_course-incre_course_num, n_concept-incre_concept_num), tripple, split_tripple_list, A, eta=5, lamb=0.01,
-                        tolerrence=0.001, update_A1=update_A1)
+                        tolerrence=1, update_A1=update_A1)
     file_prefix = 'undirect' if undirect else 'direct'
     file_prefix += '_update_A1' if update_A1 else 'noupdate_A1'
     if save:
@@ -469,8 +469,8 @@ if __name__ == '__main__':
     concept_file = 'data/ruc_all_concepts_new_with_essay.csv'
     file_type = 'sparse_row_col_val'
     incre_course_num = 176
-    incre_concept_num = 149
-    test_incre(data_file, link_file, concept_file, file_type, incre_course_num, incre_concept_num, save=True)
-    # test_incre(data_file, link_file, concept_file, file_type, incre_course_num, incre_concept_num, save=True, update_A1=True)
+    incre_concept_num = 137
+    # test_incre(data_file, link_file, concept_file, file_type, incre_course_num, incre_concept_num, save=True)
+    test_incre(data_file, link_file, concept_file, file_type, incre_course_num, incre_concept_num, save=True, update_A1=True)
     # test_incre(data_file, link_file, concept_file, file_type, incre_course_num, incre_concept_num, undirect=True, save=True)
     
